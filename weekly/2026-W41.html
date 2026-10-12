@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-W41</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px;
+              border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI 周报 · 2026-W41（10 月 5–11 日，部分补档）\n\n- **编制时间：** 2026-10-12 16:45（Asia/Shanghai），周期结束后编制。\n- **资料完整性：** 10 月 6 日由 7 日事后补档；10–11 日由 12 日事后补档，强度与当日实时监测不等同。10 月 8 日 Odyssey-3 遗漏于 12 日发现并勘误。不能据档案计算全周新闻数量或热度份额。\n- **去重：** 以原始发布日期为准；公司宣传、媒体转述和后续讨论不算三次发布。\n\n## 一周关键结论\n\n1. **Agent 入口扩张与治理问题同步加速。** OpenAI Intelligent UI、Google Gemini agent 和 Anthropic Cyber Mission 分别覆盖交互、工作流与防御，但真正的外部副作用由 Anthropic 10 月 9 日报告直观暴露。\n2. **多模态与专用决策模型走向多形态。** EmbeddingGemma 2、Liquid d1、LightOnOCR-3 和 Cloudflare Clef-omni 分别做检索、决策、文档理解与跨媒体评分，不能用一张通用模型榜单直接排序。\n3. **世界模型确有重要增量，先前“无新实证”需要纠正。** Odyssey-3 在 10 月 8 日开放可试玩预览；这是比静态演示更强的证据，但离长时稳定游戏运行时尚有距离。\n4. **AI 科研与行业试点更密集，效果证据仍不等于发布证据。** Biohub 与 Anthropic 科研支持是投入/承诺；AMIE 98 人研究是受监督小样本；均不能外推成规模化成果。\n\n```mermaid\nflowchart LR\n  A[\"本周发布与投入\"] --> B[\"可用入口/模型/数据\"]\n  B --> C[\"任务级实测\"]\n  C --> D[\"长期效果与商业结果\"]\n  E[\"反向证据：意外副作用\"] --> C\n```\n\n## 关键事件索引\n\n| 日期 | 主要增量 | 证据边界 |\n| --- | --- | --- |\n| [10-05](../daily/2026-10/2026-10-05.md) | Reflection Beam 预告、政策组织 | 早期访问不是权重交付 |\n| [10-06](../daily/2026-10/2026-10-06.md) | 广告、水印、模型渠道 | 事后补档；测试不是全面上线 |\n| [10-07](../daily/2026-10/2026-10-07.md) | Mistral API、端侧嵌入、科研 | 预览与正式开放有别 |\n| [10-08](../daily/2026-10/2026-10-08.md) | Intelligent UI、Haiku、Playground、Biohub | 含团队指标与承诺 |\n| [10-09](../daily/2026-10/2026-10-09.md) | Gemini agent、Cyber Mission、Carbon-A；Odyssey-3 后补勘误 | Gemini agent 私有预览；世界模型漏项已标注 |\n| [10-10](../daily/2026-10/2026-10-10.md) | Anthropic 非预期行动、Clef-omni | 事后补档，日期级口径 |\n| [10-11](../daily/2026-10/2026-10-11.md) | Nadella 安全架构观点、短信 Agent 观察 | 事后补档，观点非产品交付 |\n\n## 趋势演变、反向证据与下一周期信号\n\n| 趋势 | 本周变化 | 反向证据 / 被证伪判断 | 下一周期应查 |\n| --- | --- | --- | --- |\n| T01 Agent 平台 | 从聊天入口扩到跨应用与持续任务 | “发布即普遍可用”不成立：Gemini agent 仍私有预览 | 套餐、授权、任务成功率、恢复成本 |\n| T02 世界模型/游戏 | Playground 创作分发 + Odyssey-3 可试玩模拟 | “本周无可核新世界模型”被证伪；但试玩不等于成熟游戏运行时 | 10–30 分钟状态、时延、成本、玩法价值 |\n| T03/T04 专用多模态 | 开放检索、决策、OCR 与跨媒体判断扩展 | 不同任务的自测分数不可直接横比 | 中文数据、真实任务、端侧资源 |\n| T06 科研/资本 | Biohub、Anthropic 的数据与资源承诺 | 承诺额不等于现金支出或成果；模型候选不等于实验确认 | 数据开放、实验复测、交付里程碑 |\n| T07 治理 | 水印、使用政策、扫描器、事故报告、可中止观点 | 防御工具、政策文本未阻止所有非预期外部行动 | 事故分级、可撤销权限、法定通报文本 |\n| T08 价值证明 | 临床和企业 Agent 场景增多 | 样本、客户案例和基金观点都不代表普遍 ROI | 对照试验、留存、损失与人工复核成本 |\n\n## 被证伪或仍未成立\n\n- **“本周没有可验证的新世界模型预览”：被证伪。** Odyssey-3 官方在 10 月 8 日[发布可试玩入口](https://odyssey.systems/meet-odyssey-3)，前日报已勘误。\n- **“Gemini agent 已全面开放”：未成立。** [VentureBeat 向 Google 核实](https://venturebeat.com/orchestration/google-cloud-unveils-persistent-gemini-agents-for-long-running-tasks-and-they-get-their-own-gmail-calendar-and-drive-storage)，目前仅少数客户私有预览。\n- **“OSS Scanner 报告经过人工审核”：不成立。** [Anthropic 明确](https://www.anthropic.com/news/anthropic-cyber-mission)参与项目收到的模型报告未经人工预审。\n- **“AI 临床对话已可独立诊疗”：未成立。** [Google 披露](https://blog.google/innovation-and-ai/technology/health/amie-clinical-study-lancet/)的 98 人研究有医生实时监督且需更大试验。\n\n## 下周观察项\n\n1. Odyssey-3 等可试玩世界模型的独立长时测试，而非单次生成最优样本。\n2. Gemini agent 公测范围、专属身份/许可费用及管理员权限粒度。\n3. Anthropic 事故披露后的可重复测试、补救与美国正式通报机制文本。\n4. 中国厂商及游戏开发工具的一手首发；本周周末补档覆盖不足，不能据此判断行业沉寂。\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid 语法错误：" + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
