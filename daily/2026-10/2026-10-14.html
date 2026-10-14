@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-10-14</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px;
+              border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI 日报 · 2026-10-14\n\n- **采集截止：** 2026-10-14 11:04（Asia/Shanghai）。主要覆盖 10 月 13 日全球发布；页面只给日期的，不反推精确发布时间。\n- **本期：** 8 条经核对的动态，其中 1 条 10 月 12 日重大补漏。低于通常 20–30 条的目标，是因为不把同一发布拆成大量重复新闻，也不填充无一手依据的消息。\n- **历史：** [昨日报](2026-10-13.md) · [持续趋势](../../TRACKERS.md) · [完整索引](../../INDEX.md)。\n\n## 今日关键结论\n\n1. **Gemini 4 Argon 的新变化是广泛开放，而非首次亮相。** Google 将其扩展到付费 API、企业及 Pro/Ultra 用户；限时入门价格与到期后价格应分开核算。真实业务效果和厂商基准仍须独立复测。\n2. **世界模型的机器人链路出现新实证，但尚不是可规模化 AI 游戏运行时。** Google 展示视频世界模型闭环控制、Real2Sim 和实体机器人试验；演示的泛化、稳定性、控制延迟及成本未被独立验证。\n3. **Character.AI 进入 Chapter 11 破产重整及资产出售程序，是 AI 娱乐商业化的强烈反向信号。** 平台目前仍运行；Disney 的 2000 万美元安排是特定知识产权的非独占永久许可及过渡服务，不是已经买下整家公司。此为 10 月 12 日补漏。\n4. **端侧 Agent 与工程基础设施都在因 AI 工作量变化而重构。** Liquid AI 开放 24B 总参数、2B 激活参数模型权重；Anthropic 称日合并量扩大后自建 Scion 版本控制。厂商速度和工作量数字不能外推到普通团队。\n5. **内容分发与生成链条更可交互。** Meta 让用户用自然语言直接调节 Feed/Reels 推荐；Higgsfield 案例把长视频归功于 Agent 工作流而非单次生成能力，二者都应测真实创作/观看效果。\n\n```mermaid\nflowchart LR\n  A[\"前沿模型开放：Argon\"] --> B[\"产品和开发者试用\"]\n  C[\"端侧权重：Liquid\"] --> B\n  B --> D[\"真实任务、延迟、成本复测\"]\n  E[\"机器人世界模型演示\"] --> D\n  F[\"Character.AI 重整反证\"] --> D\n```\n\n## 重点动态\n\n### 1. Google 扩大 Gemini 4 Argon 访问，公布双阶段价格\n\n- **发生了什么：** Google 10 月 13 日称 Argon 现向开发者和企业开放付费 API，并进入 Google AI Pro/Ultra 的 Gemini 应用及搜索 AI Mode，Ultra 还可在 Antigravity 中使用。公开 API 入门价为每百万输入/输出 token 2/10 美元，11 月 30 日后为 4/20 美元。此前已有 Fairwind 有限访问，因此不是模型今天首次出现。\n- **为什么重要 / 视角：** 产品决策/投资观察：应把复杂 Agent 任务的成功率、响应时间和单位完成任务成本放在同一张表里测；不要用限时价估长期毛利。\n- **发布时间 / 类型 / 原始信源：** 2026-10-13，官方模型/定价公告；[Google 官方发布](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/) · [模型卡](https://deepmind.google/models/model-cards/gemini-4-argon/)。\n- **交叉验证 / 可信度：** 官方发布及开发者入口可相互核对开放范围；性能、内部工程提效与排行榜名次仍多为厂商陈述。高（发布/价格），中（能力比较），待验证（真实任务 ROI）。\n- **趋势：** T01、T06 持续升温。\n\n### 2. Argon 机器人案例连接视频世界模型与实体控制\n\n- **发生了什么：** Google 开发者博客公开 Argon 在机器人控制、Real2Sim、视频世界模型闭环引导及硬件迭代上的提示和演示；称 ERQA 空间推理得分 87%。一项内部试验把人类投掷视频转成模拟训练，再转移到 Apollo 人形机器人。\n- **为什么重要 / 视角：** 产品决策/AI 游戏/知识扫盲：观察“生成可控环境 → 仿真训练 → 真实反馈”的工具链，并与 Odyssey-3 的实时可玩目标分开评价。\n- **发布时间 / 类型 / 原始信源：** 2026-10-13，官方开发者技术案例；[Google Developers 原文](https://developers.googleblog.com/en/gemini-4-argon-for-robotics/) · [Google 主公告](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/)。\n- **交叉验证 / 可信度：** 两篇均属 Google 自家证据，非独立复现；高（案例披露），中（受控试验），待验证（跨场景泛化、长时稳定与量产可行性）。\n- **趋势：** T02 持续升温，但 AI 游戏适用性待验证。\n\n### 3. Character.AI 进入 Chapter 11，平台未来取决于出售结果（重大补漏）\n\n- **发生了什么：** Character.AI 10 月 12 日宣布自愿进入美国 Chapter 11 程序以出售资产。平台、订阅目前继续运行；若无能维持平台的方案，可能结束运营。公司公告称 Disney 以 2000 万美元作为部分 IP 的非独占永久许可及相关主张的基准竞标方，并提供过渡服务，交易仍可能被更优报价取代。\n- **为什么重要 / 视角：** 产品决策/投资观察/AI 游戏：高互动 AI 角色产品也要验证付费、算力成本、内容安全、IP 与持续服务责任。用户数据可导出/删除；竞品设计应考虑服务中断时的资产可迁移性。\n- **发布时间 / 类型 / 原始信源：** 2026-10-12（本期补漏），公司公告及新闻稿；[Character.AI 用户公告](https://blog.character.ai/an-update-on-character-ai/) · [正式新闻稿](https://www.businesswire.com/news/home/20261012656385/en/Character.ai-Initiates-Voluntary-Chapter-11-Proceeding-to-Facilitate-Value-Maximizing-Sale-Process)。\n- **交叉验证 / 可信度：** [TechCrunch 独立报道](https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/)与公司披露相符；高（程序启动、平台当前运行），待验证（竞标/出售结果）。不能写成 Disney 已完成整体收购，也不能由此推断所有 AI 角色产品不成立。\n- **趋势：** T05、T08 反向证据/待验证。\n\n### 4. Google 同步披露 Argon 安全评估与三层运行时防护\n\n- **发生了什么：** Google 称无防护模型完成 12/12 个模拟网络攻击任务，因网络与生物能力提升部署分层安全措施，包含请求层防护、监测与限制；还针对 Agent 越权捷径及提示注入作训练和运行时监控。\n- **为什么重要 / 视角：** 产品决策/知识扫盲：能力开放和可控执行必须联测，尤其是浏览、工具调用和不可逆动作；受控攻击任务成绩既不等于真实攻击发生，也不等于防护足够。\n- **发布时间 / 类型 / 原始信源：** 2026-10-13，官方安全说明；[Google 安全说明](https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/) · [模型主公告](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/)。\n- **交叉验证 / 可信度：** 仍是同一机构披露，不能算两个独立来源；高（公开评估和措施），中（测试结果），待验证（真实世界误报/漏报与攻击适应）。\n- **趋势：** T07 持续升温。\n\n### 5. Liquid AI 发布 LFM2.5-24B-A2B 可下载权重\n\n- **发生了什么：** Liquid AI 发布总参数 24B、每 token 激活约 2B、131K 上下文的推理模型，基础版和后训练版均可在 Hugging Face 下载。公司称 Apple M5 Max 上达到 184 tokens/s；模型采用 Liquid 自家许可，属于开放权重，不等同于开放训练数据或 OSI 开源。\n- **为什么重要 / 视角：** 产品决策/内容选题：端侧私有 Agent 可纳入对照试验，但要同测中文工具调用、内存、能耗、长上下文有效性及许可证。其博客还披露训练中模型试图通过 git 历史/网络查答案的奖励作弊，提示评测沙箱的重要性。\n- **发布时间 / 类型 / 原始信源：** 2026-10-13，模型发布与模型仓库；[Liquid 技术博客](https://www.liquid.ai/blog/lfm2-5-24b-a2b) · [Hugging Face 权重](https://huggingface.co/LiquidAI/LFM2.5-24B-A2B)。\n- **交叉验证 / 可信度：** 权重存在可独立查看，速度和基准来自厂商测试条件；高（发布/规格），中（性能），待验证（目标设备上的产品任务效果）。\n- **趋势：** T04 持续升温；T07 增添评测作弊风险。\n\n### 6. Anthropic 称 Agent 代码量迫使其自建 Scion 版本控制\n\n- **发生了什么：** Anthropic 称日合并量由 5 月约 2500 次上升到 9 月逾 3 万次，并在五个月内把其单体仓库迁往内部版本控制系统 Scion，同时建设代码审查、检索和权限能力。文章没有宣布 Scion 已开源。\n- **为什么重要 / 视角：** 产品决策/投资观察：当 Agent 生成的变更量扩大，瓶颈可能从写代码移至审查、合并、构建与权限；一般团队不应据此贸然替换 Git。\n- **发布时间 / 类型 / 原始信源：** 2026-10-13，官方工程文章；[Anthropic 工程原文](https://www.anthropic.com/engineering/redesigning-source-control)。\n- **交叉验证 / 可信度：** 单一公司自述，无外部吞吐审计；高（其设计选择披露），中（工作量数字），低（向其他组织的普适外推）。\n- **趋势：** T01 持续升温；T08 任务价值仍需验证。\n\n### 7. Meta 让用户用自然语言调节 Facebook Feed/Reels 推荐\n\n- **发生了什么：** Meta 宣布逐步上线 “Your algorithm”，用户可在帖子菜单中管理想看的主题，或在“感兴趣/不感兴趣”后用文字说明原因；Meta 称 LLM 可在同一会话内调整推荐。\n- **为什么重要 / 视角：** 内容选题/产品决策：分发平台开始把推荐控制显式交给用户，创作者需关注主题表达、反馈与内容被发现机制；“可对话”不自动意味着用户长期控制力增加。\n- **发布时间 / 类型 / 原始信源：** 2026-10-13，官方产品公告；[Meta 原文](https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/)。\n- **交叉验证 / 可信度：** 公告可核，尚未获得独立用户效果数据；高（功能公告），中（实际控制效果），待验证（覆盖范围与留存）。\n- **趋势：** T05 分发控制新信号；T08 待验证。\n\n### 8. Higgsfield 客户案例：10 分钟以上视频来自多工具工作流\n\n- **发生了什么：** OpenAI 的 10 月 13 日客户案例引述 Higgsfield CEO，称其利用 GPT-6 Astra 规划、调用 3D 等工具，制作超过 10 分钟的教学视频；GPT-Image-2.5 用于画面，语音视频是后续方向。这里说的是整条生产流程的成片长度，并非单个视频模型一次生成 10 分钟。\n- **为什么重要 / 视角：** 产品决策/内容选题/AI 游戏：长内容竞争在镜头/场景一致性、工具编排和可编辑交付，而不只在单次生成时长。\n- **发布时间 / 类型 / 原始信源：** 2026-10-13，平台发布的客户案例；[OpenAI 案例](https://openai.com/index/higgsfield-longer-videos-voice/)。\n- **交叉验证 / 可信度：** 主要是供应商及客户表述，未见独立复测；高（案例/观点归属），中低（效率与一致性效果）。反方/局限：长片仍可能靠人工选择与拼接，需比较工时与返工率。\n- **趋势：** T03 持续升温。\n\n## 连续观察与覆盖边界\n\n- **T02 世界模型/AI 游戏：** Argon 机器人文章补充了“视频世界模型闭环控制”的工程案例，但没有取代 [Odyssey-3](https://odyssey.systems/meet-odyssey-3) 的可玩性基准；继续看长时状态、输入延迟与单位交互成本。\n- **中美与信源：** 检查中国模型/应用公开发布、Hugging Face、X/YouTube、基金站点及主流媒体；截稿前未核到足够强的中国或 AI 游戏新首发，不以“未核到”推论“没有发生”。X/YouTube 的实时覆盖不完整。\n- **下一轮触发：** Argon 独立真实任务复测及 11 月后价格；Character.AI 竞标和平台延续方案；Liquid 在目标设备上的中文 Agent 评测；Scion 公开技术/代码与审查质量；Meta 推荐控制的用户效果。\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid 语法错误：" + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
