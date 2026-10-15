@@ -1,5 +1,22 @@
 # AI News 决策与运行记录
 
+## 2026-10-15 · 使用强度、AI 游戏工程预览与多步安全
+
+- **Output：** 本次自动任务于北京时间 10:56 提前触发并以此截稿；产出 12 条日报，更新根目录关键趋势、索引和追踪，生成同名 HTML。
+- **Decisions：** 把 OpenAI 客户样本 token 强度、Meta/YouGov 受访者自报、OpenAI 客户案例和 a16z 投资观点分开；指定 GPT-4 API 快照的停用日程与全系列停用区分；Epic 预览与稳定产品分开；MiniMax V3 的媒体报道与官方产品页分别标注，不把 30% 改善写成独立验证。
+- **Evidence：** OpenAI、Meta、Google、Anthropic、Epic、Google.org 官方发布，MiniMax 官方站及 TechFlow 快讯，a16z 原文，Ars 初步试用。
+- **Reusable assets：** 日报的观点/事实分层、连续趋势和跨来源口径对照，可用于后续周报。
+- **Anti-bubble：** 不能从厂商平台内的 token 或受访者感受外推全球 AI 经济收益；没有新可玩世界模型也不等于该方向停滞。
+- **Next：** Epic 稳定性；MiniMax 官方版本/成本口径；长时 Agent 最终任务成本与事故；多步误用防护的独立复测。
+
+```mermaid
+flowchart LR
+  A["不同类型的一手材料"] --> B["统一核查发布日期"]
+  B --> C["事实、客户主张、调查、观点分层"]
+  C --> D["日报与趋势追踪"]
+  E["独立复测和反证"] --> D
+```
+
 ## 2026-10-14 · 模型开放、世界模型案例与 AI 娱乐反证
 
 - **Output：** 北京时间 11:04 截稿，日报 8 条；同步 README、INDEX、TRACKERS 及图文 HTML。没有为 20–30 条目标填充低可信新闻。
