@@ -1,5 +1,21 @@
 # AI News 决策与运行记录
 
+## 2026-10-16 · 可复核游戏世界模型与开放权重竞争
+
+- **Output：** 自动任务北京时间 11:01 截稿；13 条日报（6 条 10 月 15 日发布、7 条 10 月 14 日补漏），同步 README、INDEX、TRACKERS 和同名 HTML。
+- **Decisions：** Matrix-Game 4.0 的 10 月 15 日 11:42 报道处于昨日 10:56 与今日 11:01 两次截稿之间，归入本期。Meta/StepFun/NVIDIA 明确区分权重开放、预告与推理规格；不把厂商 FPS、基准或 ROI 写成独立实测。
+- **Evidence：** Skywork GitHub/HF、Meta Research/HF、StepFun 官方/HF、NVIDIA、OpenAI、Amazon 官方；xAI、Paper Instruments、Ai2、Mirelo、Pluralsight、Leash Bio 原文及 Nature 论文。
+- **Reusable assets：** 按发布时间窗口、权重/许可/硬件可用性和模型—环境—成果证据层分列的日报格式。
+- **Anti-bubble：** 世界模型能跑单人演示，不代表长时游戏质量或商用可玩性；开放权重不等于宽松许可或廉价本地运行。厂商场景案例不代表普遍 ROI。
+- **Next：** Matrix-Game 单卡延迟与状态复测；Step 5/Muse Spark Open 许可与真实任务成本；Bee 隐私及留存；Rosalind 科学成果。
+
+```mermaid
+flowchart LR
+  A["发布时间窗口"] --> B["一手公告与可用资产"]
+  B --> C["独立复测与限制"]
+  C --> D["产品决策/趋势追踪"]
+```
+
 ## 2026-10-15 · 使用强度、AI 游戏工程预览与多步安全
 
 - **Output：** 本次自动任务于北京时间 10:56 提前触发并以此截稿；产出 12 条日报，更新根目录关键趋势、索引和追踪，生成同名 HTML。
