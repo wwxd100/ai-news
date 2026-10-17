@@ -1,5 +1,21 @@
 # AI News 决策与运行记录
 
+## 2026-10-17 · 开放权重交付、Agent 用工与科学实体闭环
+
+- **Output：** 北京时间 11:01 截稿；13 条日报（10 条 10 月 16 日新材料、3 条 10 月 14–15 日补漏），同步 README、INDEX、TRACKERS 和同名 HTML。
+- **Decisions：** Beam 从早期访问预告改记为权重已可下载；补查发现 Ling 3.1 于 10 月 14 日开源而非本期首发，已校正日期。NVIDIA/AI4Bharat 的语料仍为待交付；不把客户案例 ROI、公司内部就业变化、受访者预期和利益相关方观点混作同一类事实。
+- **Evidence：** Reflection/Hugging Face、InclusionAI、Anthropic 两份经济报告与两项技术研究、Google Research VERID、OpenAI 客户案例、NVIDIA/AI4Bharat 技术文、ChinaTalk 原访谈、OneWM 及 Agent 脚手架预印本。
+- **Reusable assets：** 以“已交付权重/待交付数据/自报客户结果/调查预期/实体实验”五类状态标注证据；昨日 Matrix-Game 仍保留作为游戏世界模型验证基线。
+- **Anti-bubble：** 前沿实验室内部用工不等于整体劳动力市场；程序验收的科研结果不等于量子硬件或临床成果；无新 AI 游戏首发不等于赛道停滞。
+- **Next：** Beam/Ling 固定任务成本；Matrix-Game 长时体验；VERID 外部复现；组织用工跨公司可比数据；客户案例净收益。
+
+```mermaid
+flowchart LR
+  A["可获取权重/研究/案例"] --> B["证据状态分层"]
+  B --> C["独立任务复核"]
+  C --> D["产品与趋势判断"]
+```
+
 ## 2026-10-16 · 可复核游戏世界模型与开放权重竞争
 
 - **Output：** 自动任务北京时间 11:01 截稿；13 条日报（6 条 10 月 15 日发布、7 条 10 月 14 日补漏），同步 README、INDEX、TRACKERS 和同名 HTML。
