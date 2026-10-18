@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render repository Markdown as paired Chinese/English HTML.
 
-Usage: python3 scripts/render_html.py README.md en/README.md daily/2026-10/2026-10-18.md ...
+Usage: python3 scripts/render_html.py README.md README.zh-CN.md daily/2026-10/2026-10-18.md ...
 Rendering Markdown and Mermaid in the browser uses the marked/mermaid CDNs.
 """
 
@@ -67,6 +67,12 @@ document.body.dataset.rendered = "true";
 
 
 def counterpart(relative: Path) -> Path:
+    if relative == Path("README.md"):
+        return ROOT / "README.zh-CN.md"
+    if relative == Path("README.zh-CN.md"):
+        return ROOT / "README.md"
+    if relative == Path("en/README.md"):
+        return ROOT / "README.zh-CN.md"
     if relative.parts[0] == "en":
         return ROOT.joinpath(*relative.parts[1:])
     return ROOT / "en" / relative
@@ -78,7 +84,7 @@ def render(src: Path) -> Path:
     if src.suffix != ".md":
         raise ValueError(f"Expected Markdown: {src}")
     markdown = src.read_text(encoding="utf-8")
-    english = relative.parts[0] == "en"
+    english = relative == Path("README.md") or relative.parts[0] == "en"
     lang = "en" if english else "zh-CN"
     dest = src.with_suffix(".html")
     other = counterpart(relative)

@@ -1,82 +1,36 @@
-# AI News
+<div align="center">
+<h1>AI News</h1>
+<p>Evidence-linked global AI intelligence for product decisions and story ideas<br>with investment watch and AI literacy as secondary lenses</p>
+<p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
+<p><a href="en/daily/2026-10/2026-10-18.md">Read the latest brief</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+</div>
 
-[中文（当前）](README.md) · [English](en/README.md)
+---
 
-面向产品决策、内容选题与投资观察的 AI 情报库。每日覆盖 LLM、多模态与世界模型、AI 应用、AI 游戏、公司与资本、研究报告及关键 KOL 观点。
+Daily coverage spans LLMs, multimodal and world models, AI applications, AI games, companies, research, and consequential expert views. We prioritize primary sources and label publication time, cross-checking, confidence, and trend status. New briefs from October 18, 2026 onward have complete English and Chinese editions. Earlier reports remain Chinese-only until translated and reviewed.
 
-从 2026-10-18 起，新日报提供完整中英文双版本；点击日报顶部语言链接切换。此前档案暂为中文，英文索引会明确标记，不以机器替换冒充完整译文。两版共用同一事件与信源，日期、可信度和事实/观点边界保持一致。
+## Current key trends
 
-## 最新内容
-
-- [2026-10-18 AI 日报（出口登记、DeepSeek 1017、Agent 记忆）](daily/2026-10/2026-10-18.md) · [English](en/daily/2026-10/2026-10-18.md) · [图文 HTML](daily/2026-10/2026-10-18.html)
-- [2026-10-17 AI 日报（Beam 权重、Agent 用工、科学闭环与百灵访谈）](daily/2026-10/2026-10-17.md) · [图文 HTML](daily/2026-10/2026-10-17.html)
-- [2026-10-16 AI 日报（Matrix-Game 4.0、Muse Spark Open、Step 5 权重）](daily/2026-10/2026-10-16.md) · [图文 HTML](daily/2026-10/2026-10-16.html)
-- [2026-10-15 AI 日报](daily/2026-10/2026-10-15.md) · [图文 HTML](daily/2026-10/2026-10-15.html)
-- [2026-10-14 AI 日报（含 Character.AI 重大补漏）](daily/2026-10/2026-10-14.md) · [图文 HTML](daily/2026-10/2026-10-14.html)
-- [2026-10-13 AI 日报](daily/2026-10/2026-10-13.md) · [图文 HTML](daily/2026-10/2026-10-13.html)
-- [2026-10-12 AI 日报（补漏与趋势版）](daily/2026-10/2026-10-12.md) · [图文 HTML](daily/2026-10/2026-10-12.html)
-- [2026-W41 AI 周报（10-05 至 10-11，部分补档）](weekly/2026-W41.md) · [图文 HTML](weekly/2026-W41.html)
-- [2026-10-11 AI 日报（事后补档）](daily/2026-10/2026-10-11.md)
-- [2026-10-10 AI 日报（事后补档）](daily/2026-10/2026-10-10.md)
-- [2026-10-09 AI 日报](daily/2026-10/2026-10-09.md)
-- [2026-10-08 AI 日报](daily/2026-10/2026-10-08.md)
-- [2026-10-07 AI 日报](daily/2026-10/2026-10-07.md)
-- [2026-10-06 AI 日报（事后补档）](daily/2026-10/2026-10-06.md)
-- [2026-10-05 AI 日报（周末短版）](daily/2026-10/2026-10-05.md)
-- [2026-W40 AI 周报（资料完整性受限）](weekly/2026-W40.md)
-- [2026-10-04 AI 日报（事后补档）](daily/2026-10/2026-10-04.md)
-- [2026-10-03 AI 日报（事后补档）](daily/2026-10/2026-10-03.md)
-- [2026-10-02 AI 日报（事后补档）](daily/2026-10/2026-10-02.md)
-- [2026-10-01 AI 日报（事后补档）](daily/2026-10/2026-10-01.md)
-- [2026-09 AI 月报（部分日期缺档）](monthly/2026-09.md)
-- [2026-Q3 AI 季报（仅记录 9 月部分）](quarterly/2026-Q3.md)
-- [2026-09-30 AI 日报](daily/2026-09/2026-09-30.md)
-- [2026-09-29 AI 日报](daily/2026-09/2026-09-29.md)
-- [2026-09-28 AI 日报（短版）](daily/2026-09/2026-09-28.md)
-- [2026-W39 AI 周报（09-21 至 09-27）](weekly/2026-W39.md)
-- [2026-09-27 AI 日报（短版）](daily/2026-09/2026-09-27.md)
-- [2026-09-26 AI 日报](daily/2026-09/2026-09-26.md)
-- [2026-09-25 AI 日报](daily/2026-09/2026-09-25.md)
-- [2026-09-24 AI 日报](daily/2026-09/2026-09-24.md)
-- [2026-09-23 AI 日报](daily/2026-09/2026-09-23.md)
-- [2026-09-22 AI 日报](daily/2026-09/2026-09-22.md)
-- [2026-09-21 AI 日报](daily/2026-09/2026-09-21.md)
-- [2026-W38 AI 周报（09-14 至 09-20）](weekly/2026-W38.md)
-- [2026-09-20 AI 日报](daily/2026-09/2026-09-20.md)
-- [2026-09-19 AI 日报](daily/2026-09/2026-09-19.md)
-- [2026-09-18 AI 日报](daily/2026-09/2026-09-18.md)
-- [2026-09-16 AI 日报](daily/2026-09/2026-09-16.md)
-- [2026-09-15 AI 日报](daily/2026-09/2026-09-15.md)
-- [2026-W37 AI 周报（09-07 至 09-13）](weekly/2026-W37.md)
-- [2026-09-14 AI 日报](daily/2026-09/2026-09-14.md)
-- [2026-09-13 AI 日报](daily/2026-09/2026-09-13.md)
-- [2026-09-12 AI 日报](daily/2026-09/2026-09-12.md)
-- [2026-09-11 AI 日报](daily/2026-09/2026-09-11.md)
-- [2026-09-10 AI 日报](daily/2026-09/2026-09-10.md)
-- [2026-09-08 AI 日报](daily/2026-09/2026-09-08.md)
-- [完整历史索引](INDEX.md)
-- [持续趋势追踪](TRACKERS.md)
-- [采集与筛选方法](METHODOLOGY.md)
-- [决策与运行记录](docs/decision-log.md)
-
-## 当前关键趋势
-
-**10 月 18 日新增约束与工具层：** [今日短版](daily/2026-10/2026-10-18.md)核对了中国技术出口目录草案与已经生效的临时登记、DeepSeek 1017 权重及 Search/Fetch 定价、记忆写入模型与真实回放反证。海外技术授权与 API 调用不能混为一谈；榜分也不等于产品可靠性。
-1. **开放权重进入实际交付竞争。** [Beam 501B 已交付，Ling 3.1 Flash 为 14 日补漏](daily/2026-10/2026-10-17.md)；与 Muse Spark Open、Step 5 Preview 一起评估许可、推理硬件、有效上下文及任务成本。
-2. **世界模型分化为可玩工程、机器人控制与实验数字孪生。** [Matrix-Game 4.0](daily/2026-10/2026-10-16.md)提供单人演示，[OneWM/VERID](daily/2026-10/2026-10-17.md)提供研究/实体实验路线；不能互相代替可玩性或真实环境验证。
-3. **Agent 使用深度在上升，组织后果与 ROI 仍需分层。** Anthropic 内部用工变化有较细数据，却不能外推整体劳动力市场；Stack Overflow 与 Itaú 客户案例仍缺独立净收益审计。
-4. **多模态生产走向连续工作流。** MiniMax Design V3 的跨任务素材复用、Mirelo SFX 2.0 的跨片段声音一致性，都要以返工时间和成片质量评价。
-5. **科学 AI 需要区分模型、环境与成果。** GPT-Rosalind 学术计划、Leash Bio 已测环境、Google VERID 实体实验及量子电路研究的证据层级不同，不能直接推出商业或临床成果。
-6. **安全从单条回答转向连续行为与终端防护。** Anthropic 多步滥用压力测试和 Google Android 反诈扩展仍需外部效果复测。
+1. **Open models compete on delivery, not announcements.** [DeepSeek V4.1 Flash 1017](en/daily/2026-10/2026-10-18.md) joins [Beam and Ling 3.1 Flash](daily/2026-10/2026-10-17.md) as accessible weights. Compare license, hardware, effective context, and full task cost; vendor scores are not independent tests.
+2. **World models are splitting into playable systems, robot control, and lab digital twins.** [Matrix-Game 4.0](daily/2026-10/2026-10-16.md) offers a single-player demo, while [OneWM and VERID](daily/2026-10/2026-10-17.md) illustrate research and physical-lab paths. None substitutes for long-session player validation.
+3. **Agent competition extends to tools and persistent state.** [DeepSeek Search/Fetch and Tencent's memory writer](en/daily/2026-10/2026-10-18.md) add infrastructure options. AtMem's replay counterexample calls for tests of source quality, missed and false writes, latency, and total cost.
+4. **Adoption and economic value remain separate questions.** Anthropic's internal employment observations cannot establish labor-market effects. Stack Overflow and Itaú case studies still lack independent net-return audits.
+5. **Multimodal production is becoming a structured workflow.** Asset reuse across tasks and sound consistency across clips should ultimately be judged by rework time and finished quality.
+6. **Safety and policy are moving from principles to specific controls.** [China's proposed export catalog and immediate registration](en/daily/2026-10/2026-10-18.md) are distinct; multi-step agent behavior and device protections still require outside testing.
 
 ```mermaid
 flowchart LR
-  A["模型与多模态工具"] --> B["Agent / 世界模型应用"]
-  B --> C["权限、安全与真实任务验证"]
-  C --> D["可持续用户价值"]
-  E["客户案例、调研与反证"] --> C
+  A["Model, tool and policy changes"] --> B["Task quality and scope"]
+  B --> C["Product and editorial decisions"]
+  D["Counterevidence, cost and long-run tests"] --> B
 ```
 
-> 10 月 1–4 日、6 日、10–11 日为事后补档；10 月 12 日晚于固定推送时刻。10 月 15 日任务于北京时间 10:56 提前触发，10 月 16 日于 11:01 触发并补入 10 月 14 日漏项；Matrix-Game 4.0 的 10 月 15 日 11:42 发布报道归 16 日日报。10 月 14 日含 Character.AI 重大补漏；10 月 9 日日报有 10 月 12 日勘误。9 月月报与 Q3 季报均有资料缺口。
+## Historical content
 
-> 本仓库提供研究信息，不构成投资、医疗或法律建议。关键决策应回到原始信源复核。
+- [2026-10-18 AI Daily Brief](en/daily/2026-10/2026-10-18.md) · [中文](daily/2026-10/2026-10-18.md)
+- [2026-10-17 AI Daily Brief](daily/2026-10/2026-10-17.md) · Chinese only
+- [2026-10-16 AI Daily Brief](daily/2026-10/2026-10-16.md) · Chinese only
+- [2026-W41 Weekly Brief](weekly/2026-W41.md) · Chinese only
+- [Full English archive index](en/INDEX.md) · [Complete Chinese archive](INDEX.md) · [Methodology (Chinese)](METHODOLOGY.md)
+
+> Research information only; not investment, medical, or legal advice. Check primary sources before consequential decisions.

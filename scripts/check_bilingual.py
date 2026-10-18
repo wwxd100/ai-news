@@ -13,7 +13,7 @@ ITEM = re.compile(r"^### (\d+)\.", re.MULTILINE)
 
 def check_file(english: Path) -> list:
     relative = english.relative_to(ROOT / "en")
-    chinese = ROOT / relative
+    chinese = ROOT / ("README.zh-CN.md" if relative == Path("README.md") else relative)
     errors = []
     if not chinese.is_file():
         return [f"Missing Chinese counterpart: {chinese}"]
@@ -40,7 +40,10 @@ def check_file(english: Path) -> list:
                     errors.append(f"Broken HTML language switch: {rendered}: {href}")
     english_text = english.read_text(encoding="utf-8")
     chinese_text = chinese.read_text(encoding="utf-8")
-    if "[中文]" not in english_text or "[English]" not in chinese_text:
+    if relative == Path("README.md"):
+        if "../README.zh-CN.md" not in english_text or 'href="README.md"' not in chinese_text:
+            errors.append("Missing Markdown language switch in legacy English or Chinese README")
+    elif "[中文]" not in english_text or "[English]" not in chinese_text:
         errors.append(f"Missing Markdown language switch: {relative}")
     if relative.parts[0] in {"daily", "weekly", "monthly", "quarterly", "yearly"}:
         if english.stem not in english_text or chinese.stem not in chinese_text:
@@ -56,6 +59,22 @@ def main() -> int:
         print("No English Markdown files found", file=sys.stderr)
         return 1
     failures = [issue for file in english_files for issue in check_file(file)]
+    default = (ROOT / "README.md").read_text(encoding="utf-8")
+    chinese_home = (ROOT / "README.zh-CN.md").read_text(encoding="utf-8")
+    default_html = ROOT / "README.html"
+    if not default_html.is_file() or '<html lang="en">' not in default_html.read_text(encoding="utf-8"):
+        failures.append("Default README HTML must exist and be English")
+    for source in (ROOT / "README.md", ROOT / "README.zh-CN.md"):
+        home = source.read_text(encoding="utf-8")
+        for raw in LINK.findall(home) + re.findall(r'<a href="([^"]+)"', home):
+            if not raw.startswith(("https://", "http://", "mailto:", "#")) and not (source.parent / raw.split("#", 1)[0]).is_file():
+                failures.append(f"Broken homepage link: {source}: {raw}")
+    if not default.index("## Current key trends") < default.index("## Historical content"):
+        failures.append("Default homepage must show key trends before history")
+    if not chinese_home.index("## 当前关键趋势") < chinese_home.index("## 历史内容"):
+        failures.append("Chinese homepage must show key trends before history")
+    if 'href="README.zh-CN.md"' not in default:
+        failures.append("Default homepage must link to the Chinese homepage")
     if failures:
         print("\n".join(failures), file=sys.stderr)
         return 1
