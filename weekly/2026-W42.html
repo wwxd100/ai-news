@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 周报 · 2026-W42（10 月 12–18 日）</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="2026-W42.html" lang="zh-CN" aria-current="page">中文</a><a href="../en/weekly/2026-W42.html" lang="en">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI 周报 · 2026-W42（10 月 12–18 日）\n\n[中文（当前）](2026-W42.md) · [English](../en/weekly/2026-W42.md)\n\n- **编制时间：** 2026-10-19 11:00 后（Asia/Shanghai），周期结束后编制。\n- **口径：** 归纳本仓库 10 月 12–18 日七份日报；10 月 12 日日报晚于固定推送时间，且包含对 10 月 8 日 Odyssey-3 的勘误。按原始发布日期与新证据去重，不以日报条目数量代表行业热度。\n- **导航：** [历史索引](../INDEX.md) · [趋势追踪](../TRACKERS.md)。\n\n## 一周关键结论\n\n1. **世界模型进入多条不同验证路径。** Odyssey-3 是可试玩研究预览；Matrix-Game 4.0 交付单卡代码、权重与单人演示；Google VERID 则面向实体实验。三者分别检验玩家连续体验、混合引擎工程与真实环境控制，不能互换“已能做游戏”的结论。\n2. **开放权重进入交付、许可与总成本的竞争。** Muse Spark Open、Step 5 Preview、Reflection Beam、Ling 3.1 Flash 与 DeepSeek 1017 均有不同形式的模型交付；标称参数和上下文不等于同一硬件可运行、同一许可证可商用或同一真实任务质量。\n3. **Agent 的产品护城河更依赖连续状态、工具与治理。** Muse Wonder 的记忆定位、DeepSeek Search/Fetch、腾讯 Hy-Memory、Anthropic 内部工程与安全报告共同把注意力从单轮榜分转向工具调用、记忆写入、权限边界和可恢复任务结果；内部或厂商基准尚不足以证明普适 ROI。\n4. **AI 娱乐的供需两端出现尖锐反差。** Epic 提供 AI 辅助重写 Launcher 的可下载预览，Character.AI 则进入 Chapter 11 并寻求部分 IP 许可交易。更快的创作/工程供给与角色陪伴平台的长期单位经济、安全责任是两种不同问题。\n5. **基础设施、法规与组织影响都在迫使“可交付”判断更严格。** 微软 Maia 200 的生产部署、Anthropic 内部用工研究，以及中国技术出口目录草案和即时登记各自提供不同证据；宣传指标、单公司样本和草案不能写成独立行业结论或已生效全面禁令。\n\n```mermaid\nflowchart LR\n  A[\"模型/世界模型发布\"] --> B[\"权重、许可与可用入口\"]\n  B --> C[\"真实任务/长时体验\"]\n  C --> D[\"成本、治理与留存\"]\n  E[\"反证：破产、失败回放、监管约束\"] --> C\n  E --> D\n```\n\n## 每日增量索引\n\n| 日期 | 主要增量 | 核心证据边界 |\n| --- | --- | --- |\n| [10-12](../daily/2026-10/2026-10-12.md) | Odyssey-3 补漏勘误、语音 Agent 观点 | 可试玩不等于长时可玩；观点非事实 |\n| [10-13](../daily/2026-10/2026-10-13.md) | Muse Wonder、Maia、Agent 安全与垂直应用 | 生产部署、厂商基准、受控实验分开 |\n| [10-14](../daily/2026-10/2026-10-14.md) | Gemini 4 Argon 扩大可用、机器人世界模型、Character.AI 补漏 | 扩大可用非首次发布；Disney 非收购整个平台 |\n| [10-15](../daily/2026-10/2026-10-15.md) | API 快照迁移、Epic Launcher 预览、多模态工作流 | 指定快照停用非整系列下线；预览非稳定生产 |\n| [10-16](../daily/2026-10/2026-10-16.md) | Matrix-Game 4.0、Muse Spark Open、Step 5 Preview、Bee | 权重/演示交付与性能/规模效果分开 |\n| [10-17](../daily/2026-10/2026-10-17.md) | Beam/Ling 权重、Anthropic 用工、VERID/OneWM | 内部数据不可外推；科研闭环非可玩游戏 |\n| [10-18](../daily/2026-10/2026-10-18.md) | 技术出口草案与即时登记、DeepSeek 1017/Search/Fetch、Hy-Memory | 草案非禁令；厂商榜分与社区回放不能互判胜负 |\n\n## 趋势演变与验证计划\n\n| 趋势 | 本周变化 | 反向证据 / 未成立判断 | 下一周期信号 |\n| --- | --- | --- | --- |\n| T01 Agent 与持续任务 | 记忆、搜索工具、工作流与编排成为产品层 | 离线记忆分类器分数上升却在小样本回放中退化；客户案例尚无独立净收益审计 | 任务终态、漏写/误写、人工接管、全链路费用 |\n| T02/T05 世界模型与 AI 游戏 | 从 Odyssey-3 试玩到 Matrix-Game 代码/权重，再到 VERID 实体实验 | 游戏开发 Agent 样例不是实时世界模型；实体实验不是游戏运行时 | 10–30 分钟玩家测试、状态一致性、延迟/成本；机器人异常恢复 |\n| T03/T06 开放模型 | 多家中美厂商交付不同许可、规模与设备形态 | 1M 标称上下文、大参数及厂商榜分均非产品可用性证明 | 同任务、同硬件、同许可证条件下的质量与总成本 |\n| T07 安全与政策 | 选举多步风险、Agent 外部副作用、出口临时登记 | “23 项 AI 技术已正式禁运”不成立；即时登记不可忽略 | 正式目录、适用边界、实测事故率与撤销/审计机制 |\n| T08 商业价值 | 平台分发、企业案例、AI 娱乐重整、内部用工数据 | 交互量不等于 ROI；Character.AI 高用户量未保证独立经营 | 留存、毛利、赔付/审核、组织对照数据 |\n\n## 被证伪或仍未成立\n\n- **“10 月 8 日没有可核世界模型预览”：已纠正。** [Odyssey-3 官方试玩入口](https://odyssey.systems/meet-odyssey-3)由 12 日补漏；但这仍不能证明成熟游戏运行时。\n- **“Disney 已买下 Character.AI 整个平台”：不成立。** [公司公告](https://blog.character.ai/an-update-on-character-ai/)描述的是破产程序与特定 IP 的非独占永久许可基准竞标；平台继续运行及后续出售结果待定。\n- **“23 项中国 AI 技术已被正式禁止出口”：不成立。** [商务部公告](https://www.mofcom.gov.cn/zcfb/blgg/art/2026/art_1666fcaa24424766afe0683498ff0908.html)是目录修订征求意见；特定技术出口前临时登记另行即时生效。\n- **“模型自报性能、开放权重和客户演示足以证明商业价值”：仍未成立。** 需要独立任务质量、端到端成本、授权条款和持续使用数据。\n\n## 下周观察项\n\n1. Matrix-Game/VERID/OneWM 的跨场景、长时和成本复测，区别游戏体验与实验控制。\n2. 新权重在实际硬件、中文任务和商用许可证下的可用性；DeepSeek Search/Fetch 11 月计费前的任务级试验。\n3. Character.AI 后续竞标与用户平台存续；AI 娱乐创作工具的真实留存与安全成本。\n4. 中国技术出口目录适用边界及反馈期变化；Agent 外部副作用和记忆写入的产品级评测。\n\n## 方法与限制\n\n本周材料来自七份日报及其一手信源，未重新独立复跑模型、成本或机器人/游戏测试。10 月 12 日勘误及 14 日 Character.AI 重大补漏按原始日期标记；这些缺口说明日报采集不宜用于统计“全行业事件占比”。KOL 观点保持观点标签，不升级为客观结果。此周报不构成投资、法律或医疗意见。\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid \u8bed\u6cd5\u9519\u8bef\uff1a" + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
