@@ -1,0 +1,18 @@
+# Local configuration and credentials must never be published.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.pypirc
+credentials.json
+secrets.json
+id_rsa
+id_ed25519
+
+# Local tooling artifacts.
+.venv/
+__pycache__/
+.DS_Store

@@ -5,6 +5,8 @@ import re
 import sys
 from pathlib import Path
 
+from check_repository_safety import scan as scan_repository_safety
+
 
 ROOT = Path(__file__).resolve().parents[1]
 LINK = re.compile(r"\]\(([^)]+)\)")
@@ -75,6 +77,20 @@ def main() -> int:
         failures.append("Chinese homepage must show key trends before history")
     if 'href="README.zh-CN.md"' not in default:
         failures.append("Default homepage must link to the Chinese homepage")
+    terminology = (
+        ("redundant AI expansion", r"\bAI\s+intelligence\b"),
+        ("story ideas", r"\bstory ideas\b"),
+        ("investment watch", r"\binvestment watch\b"),
+        ("AI literacy", r"\bAI literacy\b"),
+        ("open models", r"\bopen models\b"),
+    )
+    for source in [ROOT / "README.md", *english_files]:
+        prose = source.read_text(encoding="utf-8")
+        for label, pattern in terminology:
+            if re.search(pattern, prose, flags=re.IGNORECASE):
+                failures.append(f"Imprecise terminology in {source}: {label}")
+    safety_issues, _ = scan_repository_safety()
+    failures.extend(safety_issues)
     if failures:
         print("\n".join(failures), file=sys.stderr)
         return 1
