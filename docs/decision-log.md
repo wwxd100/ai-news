@@ -1,5 +1,21 @@
 # AI News 决策与运行记录
 
+## 2026-10-20 · 双语日报与发布状态分层
+
+- **Output：** 截至北京时间 10:30，整理 8 条中英文对应日报，并更新双语首页、索引、趋势追踪和 HTML。
+- **Decisions：** 不以旧闻凑足 20–30 条；将 MiniMax 的已上线 API 与未来权重、TorchNeuron 的公测预告分别标注；Google Workspace Skills 更新时间不够清晰，仅放入观察项。微软安全与 Google Cloud 评判器方法观点不写成已验证效果。
+- **Evidence：** MiniMax/OpenAI/Google/Hugging Face/微软官方材料、GoTo 模型卡与 TechNode Global、Artificial Analysis 动态页面及 MultiLangBench 公开测试集。第三方动态榜分不一致时不引用精确总分。
+- **Reusable assets：** “发布、预告、延期、独立复测”状态标签，以及低资源语言迁移的行为保真验收问题。
+- **Anti-bubble：** 厂商性能宣称与真实任务成本可能背离；开放权重不等于开源；有规范和演示也不代表企业规模化部署；未发现新世界模型不意味着领域停滞。
+- **Next：** 独立复测 MiniMax/GoTo 任务质量和成本、OpenAI 迁移评测、Google 生成流程返工率、TorchNeuron 适配、Skills 实际覆盖、评判器高风险漏检率与 Agent 越权控制。
+
+```mermaid
+flowchart LR
+  A["公告与模型卡"] --> B["确认交付状态"]
+  B --> C["区分自评和独立复测"]
+  C --> D["产品验证任务"]
+```
+
 ## 2026-10-19 · 术语校准与公开仓库安全门禁
 
 - **Output：** 修订英文首页及已发布英文日报/周报中的非专业分类措辞；中文首页改为“AI 行业资讯与研究简报”。新增术语规范、凭据文件忽略规则和发布前安全扫描，并接入双语校验。
