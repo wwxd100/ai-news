@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>Source-verified global AI industry briefings for product decisions and editorial planning<br>with investment monitoring and technical context as additional lenses</p>
 <p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
-<p><a href="en/daily/2026-10/2026-10-20.md">Read the latest brief</a> · <a href="en/weekly/2026-W42.md">Read W42</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+<p><a href="en/daily/2026-10/2026-10-21.md">Read the latest brief</a> · <a href="en/weekly/2026-W42.md">Read W42</a> · <a href="en/INDEX.md">Browse the archive</a></p>
 </div>
 
 ---
@@ -11,12 +11,13 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 
 ## Current key trends
 
-1. **Model competition is shifting from announcements to cost per completed task.** [MiniMax M3.1 Flash](en/daily/2026-10/2026-10-20.md) is available via API but its weights remain forthcoming; [DeepSeek 1017](en/daily/2026-10/2026-10-18.md) offers downloadable weights. Compare licenses, hardware, quality, retries, and end-to-end task cost; vendor scores are not independent evaluations.
-2. **World-model research is following distinct paths: interactive simulation, robot control, and laboratory digital twins.** [Matrix-Game 4.0](daily/2026-10/2026-10-16.md) offers a single-user demo, while [OneWM and VERID](daily/2026-10/2026-10-17.md) illustrate research and physical-lab paths. None substitutes for sustained player testing.
-3. **Agent competition extends to tools and persistent state.** [DeepSeek Search/Fetch and Tencent's memory-writing model](en/daily/2026-10/2026-10-18.md) add infrastructure options. AtMem's replay counterexample calls for tests of source quality, omitted and incorrect memory writes, latency, and total cost.
-4. **Adoption, governance, and economic value remain separate questions.** Anthropic's [proposed Public Benefit Fund](en/daily/2026-10/2026-10-19.md) still needs stockholder approval and implementation evidence; its internal employment observations cannot establish labor-market effects. Stack Overflow and Itaú case studies still lack independent net-return audits.
-5. **Multimodal production is becoming a structured, reviewable workflow.** [Gemini Notebook's outline and producer-note review](en/daily/2026-10/2026-10-20.md) adds a pre-render checkpoint. Asset reuse and sound consistency should ultimately be judged by rework time and finished quality.
-6. **Safety, policy, and delivery constraints are becoming concrete.** [China's proposed export catalog and immediate registration](en/daily/2026-10/2026-10-18.md) are distinct. [Nscale's power-access setback](en/daily/2026-10/2026-10-19.md) shows that announced compute capacity is not guaranteed delivery; multi-step agent behavior still needs outside testing.
+1. **Policy boundaries now affect model supply chains, not only app access.** The [US Federal Register's DeepSeek order](en/daily/2026-10/2026-10-21.md) applies to federal civilian procurement and IT systems, including specified third-party implementations; it is not a universal US private-use ban. Check the July signature and October publication timeline.
+2. **Model competition is shifting from announcements to cost per completed task.** [DeepInfer and llm-d 1.0](en/daily/2026-10/2026-10-21.md) add inspectable inference software at different layers; [MiniMax M3.1 Flash](en/daily/2026-10/2026-10-20.md) remains an API launch with weights forthcoming. Compare licenses, hardware, quality, retries, and end-to-end cost; vendor scores are not independent evaluations.
+3. **World-model research is following distinct paths: interactive simulation, robot control, and laboratory digital twins.** [Matrix-Game 4.0](daily/2026-10/2026-10-16.md) offers a single-user demo; [Google Cloud's robotics stack](en/daily/2026-10/2026-10-21.md) is a simulation-to-deployment toolchain, not a new playable game model. None substitutes for sustained player testing.
+4. **Agent competition extends to tools, context, and vertical workflows.** [OpenAI's Orchestra Bio acquisition and Gemini's car/SMB entry points](en/daily/2026-10/2026-10-21.md) expand distribution; [DeepSeek Search/Fetch and Tencent's memory-writing model](en/daily/2026-10/2026-10-18.md) add infrastructure options. Audit permissions, state quality, latency, and task cost.
+5. **Adoption, governance, and economic value remain separate questions.** [Terminal X's 54-criterion evaluation case](en/daily/2026-10/2026-10-21.md) offers a promising workflow pattern, not an independently audited return; Anthropic's [proposed Public Benefit Fund](en/daily/2026-10/2026-10-19.md) still needs approval and implementation evidence.
+6. **Multimodal production is becoming a structured, reviewable workflow.** [Gemini Notebook's outline and producer-note review](en/daily/2026-10/2026-10-20.md) adds a pre-render checkpoint. Asset reuse and sound consistency should ultimately be judged by rework time and finished quality.
+7. **Safety, deployment, and delivery constraints are becoming concrete.** [China's proposed export catalog and immediate registration](en/daily/2026-10/2026-10-18.md) are distinct. [GDC's air-gapped search preview](en/daily/2026-10/2026-10-21.md) needs independent boundary validation; [Nscale's power-access setback](en/daily/2026-10/2026-10-19.md) shows announced compute is not guaranteed delivery.
 
 ```mermaid
 flowchart LR
@@ -27,6 +28,7 @@ flowchart LR
 
 ## Historical content
 
+- [2026-10-21 AI Daily Brief](en/daily/2026-10/2026-10-21.md) · [中文](daily/2026-10/2026-10-21.md)
 - [2026-10-20 AI Daily Brief](en/daily/2026-10/2026-10-20.md) · [中文](daily/2026-10/2026-10-20.md)
 - [2026-10-19 AI Daily Brief](en/daily/2026-10/2026-10-19.md) · [中文](daily/2026-10/2026-10-19.md)
 - [2026-W42 Weekly Brief](en/weekly/2026-W42.md) · [中文](weekly/2026-W42.md)

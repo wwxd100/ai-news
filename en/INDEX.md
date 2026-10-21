@@ -6,6 +6,7 @@
 
 ### October
 
+- [2026-10-21 AI Daily Brief](daily/2026-10/2026-10-21.md) · [HTML](daily/2026-10/2026-10-21.html) · [中文](../daily/2026-10/2026-10-21.md)
 - [2026-10-20 AI Daily Brief](daily/2026-10/2026-10-20.md) · [HTML](daily/2026-10/2026-10-20.html) · [中文](../daily/2026-10/2026-10-20.md)
 - [2026-10-19 AI Daily Brief](daily/2026-10/2026-10-19.md) · [HTML](daily/2026-10/2026-10-19.html) · [中文](../daily/2026-10/2026-10-19.md)
 - [2026-W42 AI Weekly Brief](weekly/2026-W42.md) · [HTML](weekly/2026-W42.html) · [中文](../weekly/2026-W42.md)
