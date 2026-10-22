@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>Source-verified global AI industry briefings for product decisions and editorial planning<br>with investment monitoring and technical context as additional lenses</p>
 <p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
-<p><a href="en/daily/2026-10/2026-10-21.md">Read the latest brief</a> · <a href="en/weekly/2026-W42.md">Read W42</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+<p><a href="en/daily/2026-10/2026-10-22.md">Read the latest brief</a> · <a href="en/weekly/2026-W42.md">Read W42</a> · <a href="en/INDEX.md">Browse the archive</a></p>
 </div>
 
 ---
@@ -10,6 +10,8 @@
 Daily coverage spans large language models (LLMs), multimodal and world models, AI applications, AI in gaming, company developments, research, and notable expert perspectives. We prioritize primary sources and label publication time, independent corroboration, confidence, and trend status. New briefs from October 18, 2026 onward have complete English and Chinese editions. Earlier reports remain Chinese-only until translated and reviewed.
 
 ## Current key trends
+
+**New today:** [OpenAI models on Google Cloud](en/daily/2026-10/2026-10-22.md) are in selected-enterprise private preview, not general release. [PHP shipped fixes for two critical flaws](en/daily/2026-10/2026-10-22.md) after AI-assisted research; [NVIDIA OpenShell](en/daily/2026-10/2026-10-22.md) adds inspectable Agent controls, not independently proven security.
 
 1. **Policy boundaries now affect model supply chains, not only app access.** The [US Federal Register's DeepSeek order](en/daily/2026-10/2026-10-21.md) applies to federal civilian procurement and IT systems, including specified third-party implementations; it is not a universal US private-use ban. Check the July signature and October publication timeline.
 2. **Model competition is shifting from announcements to cost per completed task.** [DeepInfer and llm-d 1.0](en/daily/2026-10/2026-10-21.md) add inspectable inference software at different layers; [MiniMax M3.1 Flash](en/daily/2026-10/2026-10-20.md) remains an API launch with weights forthcoming. Compare licenses, hardware, quality, retries, and end-to-end cost; vendor scores are not independent evaluations.
@@ -28,6 +30,7 @@ flowchart LR
 
 ## Historical content
 
+- [2026-10-22 AI Daily Brief](en/daily/2026-10/2026-10-22.md) · [中文](daily/2026-10/2026-10-22.md)
 - [2026-10-21 AI Daily Brief](en/daily/2026-10/2026-10-21.md) · [中文](daily/2026-10/2026-10-21.md)
 - [2026-10-20 AI Daily Brief](en/daily/2026-10/2026-10-20.md) · [中文](daily/2026-10/2026-10-20.md)
 - [2026-10-19 AI Daily Brief](en/daily/2026-10/2026-10-19.md) · [中文](daily/2026-10/2026-10-19.md)
