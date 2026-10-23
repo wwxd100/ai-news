@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>Source-verified global AI industry briefings for product decisions and editorial planning<br>with investment monitoring and technical context as additional lenses</p>
 <p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
-<p><a href="en/daily/2026-10/2026-10-23.md">Read the latest brief</a> · <a href="en/weekly/2026-W42.md">Read W42</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+<p><a href="en/daily/2026-10/2026-10-24.md">Read the latest brief</a> · <a href="en/weekly/2026-W42.md">Read W42</a> · <a href="en/INDEX.md">Browse the archive</a></p>
 </div>
 
 ---
@@ -11,10 +11,10 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 
 ## Current key trends
 
-**New today:** [OpenAI Decisions API reached general availability](en/daily/2026-10/2026-10-23.md), while [ThinkingBox training](en/daily/2026-10/2026-10-23.md) highlights repeated agent reliability and a coverage trade-off. A [catch-up on Cosmos3-H-Dreams](en/daily/2026-10/2026-10-23.md) corrects our world-model collection: it is a surgical research simulator, not a playable AI game or clinically validated system.
+**New today:** [OpenAI is reported to be raising up to $30 billion at a $1.25 trillion pre-money valuation](en/daily/2026-10/2026-10-24.md), while AI and semiconductor stocks sold off on spending-payback concerns. [MiniMax released M3.1 Flash weights](en/daily/2026-10/2026-10-24.md) under a community license with a $20 million revenue authorization threshold, and [Google Cloud began offering OpenAI models to enterprises](en/daily/2026-10/2026-10-24.md).
 
 1. **Policy boundaries now affect model supply chains, not only app access.** The [US Federal Register's DeepSeek order](en/daily/2026-10/2026-10-21.md) applies to federal civilian procurement and IT systems, including specified third-party implementations; it is not a universal US private-use ban. Check the July signature and October publication timeline.
-2. **Model competition is shifting from announcements to cost per completed task.** [DeepInfer and llm-d 1.0](en/daily/2026-10/2026-10-21.md) add inspectable inference software at different layers; [MiniMax M3.1 Flash](en/daily/2026-10/2026-10-20.md) remains an API launch with weights forthcoming. Compare licenses, hardware, quality, retries, and end-to-end cost; vendor scores are not independent evaluations.
+2. **Model competition is shifting from announcements to cost per completed task.** [DeepInfer and llm-d 1.0](en/daily/2026-10/2026-10-21.md) add inspectable inference software at different layers; [MiniMax M3.1 Flash weights are now downloadable](en/daily/2026-10/2026-10-24.md) under a community license that requires attribution and prior authorization above $20 million in annual revenue. Compare licenses, hardware, quality, retries, and end-to-end cost; vendor scores are not independent evaluations.
 3. **World-model research is following distinct paths: interactive simulation, robot control, and laboratory digital twins.** [Matrix-Game 4.0](daily/2026-10/2026-10-16.md) offers a single-user demo; [Google Cloud's robotics stack](en/daily/2026-10/2026-10-21.md) is a simulation-to-deployment toolchain, not a new playable game model. None substitutes for sustained player testing.
 4. **Agent competition extends to tools, context, and vertical workflows.** [OpenAI's Orchestra Bio acquisition and Gemini's car/SMB entry points](en/daily/2026-10/2026-10-21.md) expand distribution; [DeepSeek Search/Fetch and Tencent's memory-writing model](en/daily/2026-10/2026-10-18.md) add infrastructure options. Audit permissions, state quality, latency, and task cost.
 5. **Adoption, governance, and economic value remain separate questions.** [Terminal X's 54-criterion evaluation case](en/daily/2026-10/2026-10-21.md) offers a promising workflow pattern, not an independently audited return; Anthropic's [proposed Public Benefit Fund](en/daily/2026-10/2026-10-19.md) still needs approval and implementation evidence.
@@ -30,6 +30,7 @@ flowchart LR
 
 ## Historical content
 
+- [2026-10-24 AI Daily Brief](en/daily/2026-10/2026-10-24.md) · [中文](daily/2026-10/2026-10-24.md)
 - [2026-10-23 AI Daily Brief](en/daily/2026-10/2026-10-23.md) · [中文](daily/2026-10/2026-10-23.md)
 - [2026-10-22 AI Daily Brief](en/daily/2026-10/2026-10-22.md) · [中文](daily/2026-10/2026-10-22.md)
 - [2026-10-21 AI Daily Brief](en/daily/2026-10/2026-10-21.md) · [中文](daily/2026-10/2026-10-21.md)

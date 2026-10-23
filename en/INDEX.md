@@ -6,6 +6,7 @@
 
 ### October
 
+- [2026-10-24 AI Daily Brief (8 high-signal items, early edition)](daily/2026-10/2026-10-24.md) · [HTML](daily/2026-10/2026-10-24.html) · [中文](../daily/2026-10/2026-10-24.md)
 - [2026-10-23 AI Daily Brief (10 high-signal items, including catch-ups)](daily/2026-10/2026-10-23.md) · [HTML](daily/2026-10/2026-10-23.html) · [中文](../daily/2026-10/2026-10-23.md)
 - [2026-10-22 AI Daily Brief](daily/2026-10/2026-10-22.md) · [HTML](daily/2026-10/2026-10-22.html) · [中文](../daily/2026-10/2026-10-22.md)
 - [2026-10-21 AI Daily Brief](daily/2026-10/2026-10-21.md) · [HTML](daily/2026-10/2026-10-21.html) · [中文](../daily/2026-10/2026-10-21.md)
