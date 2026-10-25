@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 · 2026-10-25</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="2026-10-25.html" lang="zh-CN" aria-current="page">中文</a><a href="../../en/daily/2026-10/2026-10-25.html" lang="en">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI 日报 · 2026-10-25\n\n[中文（当前）](2026-10-25.md) · [English](../../en/daily/2026-10/2026-10-25.md)\n\n- **采集截止：** 2026-10-25 21:00（Asia/Shanghai）。对照[10 月 24 日提前版](2026-10-24.md)，继续核查 10 月 23 日晚至今的中英文一手来源。\n- **本期性质：** 今日无重大更新。补录 6 项此前未覆盖、仍有决策价值的 10 月 20–23 日发布；均标明原始日期。本期不把旧消息伪装成今日首发，也不为凑 20–30 条加入传言。\n- **导航：** [趋势追踪](../../TRACKERS.md) · [历史索引](../../INDEX.md)。10 月 20–23 日的发布可能晚于或早于当日截稿；未有时刻的页面不推定具体上线时间。\n\n## 今日关键结论\n\n1. **腾讯 Hy-Nomas 是值得复测的交互式视频世界模型补漏。** 权重、代码、演示和 280 项测试集可核，支持分段生成时继续用文字与相机轨迹控制；官方没有公布可比成绩。标称 24 FPS 是输出视频播放帧率，不是实际生成速度，更不能据此证明成熟游戏体验。\n2. **具身智能的瓶颈从“看见/抓取”延伸到任务状态与分支决策。** 腾讯 WeVisOne-VL 提供物体到像素的视觉感知组件；智元新数据集连接目标、过程和真机动作。两者分别是视觉模型与训练数据，不是已证明独立完成长期服务任务的机器人产品。\n3. **Agent 安全边界出现更具体的失败模式。** OpenAI 披露内部红队在隔离研究环境中发现虚拟机逃逸、外网通路和跨隔离通信，称已修复并恢复训练；这些是厂商自报的研究环境结果，不意味着所有生产 Agent 已具备同等隔离或“绝对安全”。\n4. **同一云采购不代表同一数据责任边界。** Google Cloud 新增 Anthropic 管理的 Claude 部署方式，与原有 Google 管理方式共享云端采购入口，但数据处理者、服务条款与新平台功能上线节奏不同；企业采购需按部署模式审合同与数据驻留。\n5. **语音 Agent 有新的欧洲产品选项，但仍是公测。** Mistral Voxtral 3 与 Voice Agents SDK 已在 10 月 20 日发布，公开预览包含转写、合成和双向语音管线；生成/识别质量及端到端延迟仍需在实际语言、噪声和打断场景复测。\n\n```mermaid\nflowchart LR\n  A[\"模型、数据与平台已发布\"] --> B[\"目标任务与部署边界\"]\n  B --> C[\"独立复测\"]\n  C --> D[\"产品决策与内容选题\"]\n  E[\"旧消息补漏和原始日期\"] --> B\n```\n\n## 重点动态\n\n### 1. 腾讯 Hy-Nomas 发布可交互视频世界模型权重与代码\n\n- **发生了什么：** 腾讯模型卡与代码仓库提供 Hy-Nomas 权重、分段自回归视频生成、文字和相机轨迹控制、在线演示，以及含 280 个测试案例的 Hy-Nomas-Bench。蒸馏配置使用 8 步去噪，输出视频为 720×1280、24 FPS；另有单张 RTX 4090 的量化/CPU 卸载推理配置。模型卡未给出该测试集的官方成绩，也未给出通用硬件上的实测生成帧率。\n- **为什么重要 / 视角：** 产品决策、内容选题、技术背景。可研究连续场景的可控性与状态记忆；需用长时交互测试动作响应、实体持续性、延迟与单位分钟成本。演示可试不等于可制作完整游戏。\n- **发布时间 / 类型 / 原始信源：** 2026-10-23（本期补漏），模型卡、权重与代码；[腾讯 Hugging Face](https://huggingface.co/tencent/Hy-Nomas) · [代码仓库](https://github.com/Tencent-Hunyuan/Hy-Nomas)。\n- **交叉验证 / 可信度：** 同一发布方的权重、代码和测试集可核，并非独立效果复现。高（资产交付）；待验证（真实生成速度、长时一致性与可玩性）。\n- **趋势：** T02/T05 补漏、可复核原型；不与 10 月 25 日新发布或游戏商业化混写。\n\n### 2. OpenAI 披露前沿模型研究环境的隔离红队结果\n\n- **发生了什么：** OpenAI 称在内部研究环境发现并修复多类问题，包括微型虚拟机逃逸、经内部服务接触外网以及隔离 Agent 之间通过共享资源通信。公司称 9 月 20 日事件后暂停最强模型训练/评估，强化防护后于 10 月 1 日恢复强化学习训练和内部推理；目前前沿模型训练不开放实时互联网。\n- **为什么重要 / 视角：** 产品决策、技术背景。长时 Agent 风险不只在提示词，还在文件、网络、宿主机和跨任务资源；对真实产品应分别做权限矩阵、出网、审计和中止测试，不能直接移植实验室结论。\n- **发布时间 / 类型 / 原始信源：** 2026-10-23（本期补漏），安全技术披露；[OpenAI 原文](https://openai.com/index/securing-our-frontier-model-training-environment/)。\n- **交叉验证 / 可信度：** 一手技术说明及部分上游补丁链接可检查，整体红队覆盖率和残余风险未有独立审计。高（披露）；待验证（控制效果与外部适用性）。\n- **趋势：** T07 已披露具体失效模式；“已修复所发现问题”不等于“再无逃逸路径”。\n\n### 3. 微信视觉团队发布 WeVisOne-VL 视觉感知模型\n\n- **发生了什么：** 腾讯 WeChat Vision 发布 WeVisOne-VL-4B 模型卡、权重和推理代码，基于 Qwen3-VL 同时覆盖开放词汇目标检测、定位、计数、OCR、指向分割与图像抠图；像素任务另依赖约 960 万参数解码器。模型卡明确主要用于单轮图像感知，像素解码器不处理视频网格。\n- **为什么重要 / 视角：** 产品决策、技术背景。创作工具可把“找角色/物体”与“生成精确蒙版”放在同一视觉流程；须复测中文指令、遮挡、透明边缘及授权条件，不能把图像感知模型写成视频生成模型。\n- **发布时间 / 类型 / 原始信源：** 2026-10-22/23（模型页上线与传播日期不一，本期补漏），模型卡/权重/代码；[模型卡](https://huggingface.co/tencent/WeVisOne-VL-4B) · [项目页](https://tencent.github.io/WeVisOne-VL/)。\n- **交叉验证 / 可信度：** 资产与适用限制可核；该团队自报性能尚无目标素材库独立实测。高（发布与任务范围）；待验证（目标场景质量）。\n- **趋势：** T03 持续升温；从视觉描述走向结构化物体与像素操作。\n\n### 4. 智元开放 AGIBOT WORLD 2026 第四期“具身推理”数据\n\n- **发生了什么：** 智元宣布并链接 AGIBOT WORLD 2026 Release 4“Physical Reasoning”数据集，收录同一任务在不同数量、遮挡、空间与进度条件下的不同决策和真机动作；公司称首批约 150 小时数据。标注将高层目标、子任务、动作及结果关联，包含成功和错误片段。后续机器人本体、Agent 框架和 24 小时便利店演示属于排期，不是本期已验证成果。\n- **为什么重要 / 视角：** 产品决策、技术背景、内容选题。训练数据开始强调状态记忆与可执行分支；需检查数据许可、覆盖偏差、错误样本质量及独立机器人任务收益。\n- **发布时间 / 类型 / 原始信源：** 2026-10-22（本期补漏），公司公告与数据集；[智元英文公告](https://agibot.com/article/231/detail/129.html) · [Hugging Face 数据集](https://huggingface.co/datasets/agibot-world/AgiBotWorld2026)。\n- **交叉验证 / 可信度：** 公告和数据集同属发布方，不能算独立训练效果验证。高（数据发布）；待验证（覆盖与迁移效果）。\n- **趋势：** T02 数据层已落地；不等于机器人长时自主服务已落地。\n\n### 5. Google Cloud 新增 Anthropic 管理的 Claude 部署方式\n\n- **发生了什么：** Google Cloud 宣布 Anthropic 管理的 Claude 部署选项正式可用，与既有 Google 管理选项并列。两者共享 Google Cloud 账单和符合条件的承诺抵扣；前者由 Anthropic 作为数据处理者，较早接入 Claude Managed Agents 等平台功能，后者由 Google 作为数据处理者，提供原有治理、客户管理密钥及区域驻留能力。\n- **为什么重要 / 视角：** 产品决策、投资观察。多模型采购聚合到云账单，数据责任、条款和功能上线节奏却可能分叉；采购/法务需逐模式验收，不可从“都在 Google Cloud”推断同一处理边界。\n- **发布时间 / 类型 / 原始信源：** 2026-10-22（本期补漏），云产品公告；[Google Cloud 原文](https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud/)。\n- **交叉验证 / 可信度：** 单方公告，服务条款与界面需由采购方复核。高（官方提供状态）；待验证（特定区域、合同与实际体验）。\n- **趋势：** T01/T06 已落地；模型分发从“有无上架”转向部署责任划分。\n\n### 6. Mistral Voxtral 3 与 Voice Agents 进入公开预览\n\n- **发生了什么：** Mistral 更新日志记录 Voxtral 3 语音家族于 10 月 20 日进入 Public Preview，覆盖离线/实时转写、说话人归属及文本转语音，并发布 Voice Agents SDK 将收音、转写、对话模型、语音合成与播放连接为双向管线。各模型的托管访问与许可需分别核对，不将整套家族说成开放权重。\n- **为什么重要 / 视角：** 产品决策、内容选题。语音交互的竞争对象正在变成整条端到端体验；应测中英混说、噪声、抢话、工具调用延迟、声音一致性和成本，而不只看单模型 WER。\n- **发布时间 / 类型 / 原始信源：** 2026-10-20（事后补漏），官方更新日志与开发文档；[Mistral 更新日志](https://docs.mistral.ai/resources/changelogs) · [Voice Agents 文档](https://docs.mistral.ai/studio/audio/voice-agents/overview)。\n- **交叉验证 / 可信度：** 官方产品和文档可核；无本轮独立语音任务实测。高（公开预览）；待验证（多语质量及端到端体验）。\n- **趋势：** T03/T04 补漏；欧洲语音 Agent 栈增选项。\n\n## 连续追踪与覆盖缺口\n\n- **本日新消息：** 截至 21:00 未核到足以替代上述补漏的高证据 10 月 24–25 日重大模型、产品或 AI 游戏交付，故明确记录“今日无重大更新”；不以搜索遗漏推断行业停滞。\n- **补漏/修正：** Hy-Nomas 的权重/代码/测试集、OpenAI 隔离披露、WeVisOne-VL、智元数据、Claude 部署模式和 Voxtral 3 均按原始 10 月 20–23 日标注；前期覆盖不完整，历史文件不无痕改写。\n- **待验证：** Hy-Nomas 的实际生成速度与长时可玩性、机器人数据对任务迁移的收益、视觉模型在中文素材上的表现、安全隔离的独立审计、云部署的真实合同边界及语音 Agent 体验。\n\n> 研究资讯，不构成投资、医疗或法律建议；关键决策请复核原始信源和适用条件。\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid \u8bed\u6cd5\u9519\u8bef\uff1a" + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
