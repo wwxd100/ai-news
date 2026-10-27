@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 · 2026-10-26（事后补档）</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="2026-10-26.html" lang="zh-CN" aria-current="page">中文</a><a href="../../en/daily/2026-10/2026-10-26.html" lang="en">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI 日报 · 2026-10-26（事后补档）\n\n[中文（当前）](2026-10-26.md) · [English](../../en/daily/2026-10/2026-10-26.md)\n\n- **基准截止：** 2026-10-26 10:30（Asia/Shanghai）；2026-10-27 事后核查并补档，不能视为 26 日准时发布。\n- **本期性质：** 截至基准时点，未核到足以构成重大新发布的高证据事项。仅记录一项已排定且到期的企业产品迁移节点，不用后来的美国 10 月 26 日消息回填前一日上午。\n- **导航：** [历史索引](../../INDEX.md) · [趋势追踪](../../TRACKERS.md)。\n\n## 今日关键结论\n\n1. **今日无重大更新。** 这表示本次有限信源复查未发现高证据重大增量，不代表全行业无新动态。\n2. **受影响的 ChatGPT Enterprise 工作区进入 Custom GPT 新建冻结节点。** OpenAI 帮助文档将 10 月 26 日列为生效日；适用范围和实际启用以各工作区通知为准，现有 GPT 的可用性与迁移截止日是另一问题。\n\n```mermaid\nflowchart LR\n  A[\"已排定的迁移节点\"] --> B[\"核对工作区通知\"]\n  B --> C[\"迁移并测试现有 GPT\"]\n  D[\"后续发布的新消息\"] --> E[\"归入 10 月 27 日\"]\n```\n\n## 重点动态\n\n### 1. 受影响 Enterprise 工作区停止新建 Custom GPT\n\n- **发生了什么：** OpenAI 帮助文档称，10 月 26 日起，受影响的 Enterprise 工作区停止新建 GPT；FedRAMP 工作区除外。未迁移的现有 GPT 仍可编辑，迁移后原 GPT 只读；一般计划中的现有 GPT 退役日为 12 月 11 日，部分获准延期的工作区另有时间表。\n- **为什么重要 / 视角：** 产品决策、技术背景。依赖旧 GPT 的团队应按自身通知核对插件迁移、所有者权限和回归测试；不应把新建冻结写成所有 GPT 即日下线。\n- **发布时间 / 类型 / 原始信源：** 2026-10-26 为官方文档列出的适用节点；[OpenAI 帮助文档](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq)。文档更新时刻未核。\n- **交叉验证 / 可信度：** 单一官方操作说明；高（公布的通用规则），待工作区通知确认（具体适用与迁移入口）。\n- **趋势：** T01 已排定迁移节点；企业 Agent 资产治理持续升温。\n\n## 连续追踪与限制\n\n- 10 月 25 日所列世界模型、语音及安全事项未发现足以改变原判断的新独立结果。\n- 本文是 27 日按 26 日上午基准时点补档；不能证明定时任务在 26 日运行。美国 10 月 26 日发布的材料见[次日日报](2026-10-27.md)。\n\n> 行业资讯，不构成投资或法律建议；重要决策请核对原始信源和适用条件。\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid \u8bed\u6cd5\u9519\u8bef\uff1a" + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>

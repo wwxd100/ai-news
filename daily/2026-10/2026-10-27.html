@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 · 2026-10-27（延迟发布）</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="2026-10-27.html" lang="zh-CN" aria-current="page">中文</a><a href="../../en/daily/2026-10/2026-10-27.html" lang="en">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI 日报 · 2026-10-27（延迟发布）\n\n[中文（当前）](2026-10-27.md) · [English](../../en/daily/2026-10/2026-10-27.md)\n\n- **采集截止：** 2026-10-27 14:45（Asia/Shanghai）。晚于原定 11:00 推送；美国当地 10 月 26 日发布按北京本日观察处理，无法从只有日期的页面推断精确上线时刻。\n- **本期性质：** 6 条有原始信源的高信号短版。常规目标为 20–30 条；本次不以低质量消息凑数。10 月 26 日缺档已[单独补齐](2026-10-26.md)。\n- **导航：** [历史索引](../../INDEX.md) · [趋势追踪](../../TRACKERS.md)。\n\n## 今日关键结论\n\n1. **GPT-6.1 Terra 把视觉理解、计算机操作与低成本组合到同一模型。** API 已列出型号和价格；显著性能提升属于 OpenAI 自报基准，产品团队应在自身界面、失败恢复和总成本上复测。\n2. **Anthropic 宣布提交拟议 IPO 的 S-1。** 股票数量和发行区间未定，注册声明尚未生效；这是融资进程节点，不是已经上市或可购买证券。\n3. **AI 科研突破出现需要严肃核验的强声明。** OpenAI 宣布数学、复杂性理论与量子场论方向结果，并安排不同的学术审阅路径。公开的自然语言材料和 Lean 形式化是证据线索，不能替代独立数学与物理界评审；尤其不应把“ETH 已被推翻”写成公认定论。\n4. **AI 使用数据和基础设施更接近可研究、可运营的形态。** OpenAI Signals 发布 165 类工作活动的分组数据，Hugging Face 则更新共享缓存、Jobs 与数据存储工具。前者是特定产品的使用样本，后者的速度数字是平台自测。\n5. **模型路由器的商业价值需要同任务静态基线。** AutoBench 社区研究认为所测路由器未同时胜过固定中档模型的质量与成本；其测试调用发生在 8 月底至 9 月初，只代表给定模型池、路由器版本与指标。\n\n```mermaid\nflowchart LR\n  A[\"模型与科研声明\"] --> B[\"公开材料和可用接口\"]\n  B --> C[\"独立复核和目标任务复测\"]\n  C --> D[\"产品与内容决策\"]\n  E[\"资本与使用数据\"] --> C\n```\n\n## 重点动态\n\n### 1. OpenAI 发布 GPT-6.1 Terra\n\n- **发生了什么：** OpenAI 推出侧重视觉推理、计算机操作和文字表达的 GPT-6.1 Terra，API 型号为 `gpt-6.1-terra`。官方标准价格为每百万输入 token 1 美元、缓存输入 0.05 美元、输出 5 美元；Plus、Pro、Enterprise 和 Edu 的 ChatGPT Work/Codex 可用。其 Agents’ Last Exam、Terminal-Bench 4.0 和速度改进数字来自厂商测试。\n- **为什么重要 / 视角：** 产品决策、内容选题。可重估表单、图纸和编辑软件操作的模型分工，但应按真实任务测成功率、出错恢复、权限与每个完成任务的费用。\n- **发布时间 / 类型 / 原始信源：** 2026-10-26（美国页面日期），[OpenAI 发布](https://openai.com/index/introducing-gpt-6-1-terra/) · [API 更新日志](https://developers.openai.com/api/docs/changelog)。\n- **交叉验证 / 可信度：** 发布与 API 记录同属 OpenAI；高（型号、公开价格和宣布可用），待独立验证（性能、安全与成本收益）。\n- **趋势：** T01/T03 首次出现；从模型分数转向图形界面任务成本。\n\n### 2. Anthropic 宣布提交拟议 IPO 注册文件\n\n- **发生了什么：** Anthropic 称已向美国 SEC 提交 Class A 普通股拟议首次公开发行的 Form S-1，拟在 Nasdaq Global Select Market 使用 `ANT` 代码；股份数和价格范围未定，注册声明尚未生效。\n- **为什么重要 / 视角：** 投资观察、行业知识。未来招股书可为收入、成本和治理研究增加资料；本期不能推断估值、上市时间或发行成功。\n- **发布时间 / 类型 / 原始信源：** 2026-10-26，美国 SEC 文件索引记录接收于美东 09:00:11（北京时间 21:00:11）；[Anthropic 公告](https://www.anthropic.com/news/s1-sec) · [SEC EDGAR 原始申报索引](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/0001628280-26-067168-index.html)。\n- **交叉验证 / 可信度：** 公司公告与监管机构原始申报索引相互印证提交日期、文件类型和注册人；本轮未逐页审阅招股书财务细节。高（申报事实），待核（详细条款与后续生效）。\n- **趋势：** T08 首次出现拟议公开市场融资节点；与 10 月 19 日拟议公益基金的治理后续分别追踪。\n\n### 3. OpenAI 发布三项 AI 辅助科研结果声明与审阅安排\n\n- **发生了什么：** OpenAI 声称模型产出了涉及 Kakeya/局部光滑猜想、指数时间假设（ETH）和四维规范场论的结果。其公开说明把数学结果的材料直接开放，复杂性结果交由外部小组研究并提供自然语言及 Lean 材料，物理结果先由外部学者组织阐释而暂缓开放全部生成材料。OpenAI 称学者可独立评价，且不会把受邀学者署为模型产出的作者。\n- **为什么重要 / 视角：** 内容选题、行业知识。重大科研报道应分开“厂商发布、形式化检查、学界理解与接受”；Lean 检查仍依赖形式化陈述与公理假设，不能直接推出所有非形式化科学主张已被确认。\n- **发布时间 / 类型 / 原始信源：** 2026-10-26（美国页面日期），[OpenAI 原文及材料链接](https://openai.com/index/building-scientific-understanding-with-academic-communities/)。\n- **交叉验证 / 可信度：** 单方发布，部分材料可公开检查；未在本轮获得独立专家结论。高（发布了声明和审阅安排），待验证（各数学/物理结论）。\n- **趋势：** T09 首次出现；AI 科研从发现声明进入公开复核流程。\n\n### 4. OpenAI Signals 发布工作活动数据\n\n- **发生了什么：** OpenAI 发布覆盖近 100 个国家、165 个工作活动类别的 ChatGPT 使用数据，按季度覆盖 2025 年第一季度至 2026 年第三季度。公司称在连续观察的 74 国中，前十类活动占已分类工作消息的平均比重由 56.0% 降至 51.1%。数据仅包括个人 ChatGPT 计划中的工作相关消息，不包括 Enterprise 与 Codex 使用。\n- **为什么重要 / 视角：** 产品决策、投资观察、行业知识。适合探索任务分布与地域差异；消息分布不等于职业替代、企业采用率或生产率。\n- **发布时间 / 类型 / 原始信源：** 2026-10-26（美国页面日期），[OpenAI Signals 说明](https://openai.com/index/chatgpt-expanding-world-of-work/) · [数据入口](https://openai.com/signals/data-download/)。\n- **交叉验证 / 可信度：** 官方方法和下载入口可核，样本仅来自单一平台；高（发布与口径），待独立复算（具体统计及外推）。\n- **趋势：** T08 持续升温；采用研究转向任务类别数据。\n\n### 5. Hugging Face 汇总 Hub CLI、Jobs 与共享缓存更新\n\n- **发生了什么：** Hugging Face 官方作者介绍共享 Xet 文件缓存、单文件清理、Jobs 重试/重跑、Bucket 触发任务与存储桶下载改进。文中以共享 9.5 GB 文本编码器为例说明去重，并给出自家 Jobs 环境中 2.15 GB 文件下载速度对比；文章是近期功能汇总，并非所有功能均在 26 日首次发布。\n- **为什么重要 / 视角：** 产品决策、技术背景。模型资产管理与数据任务编排的工程成本可下降，需在自有仓库、网络、硬件与权限条件下测量。\n- **发布时间 / 类型 / 原始信源：** 2026-10-26（页面日期），[Hugging Face 官方作者文章](https://huggingface.co/blog/huggingface/whats-new-in-the-hf-cli-and-huggingface-hub-librar)。\n- **交叉验证 / 可信度：** 官方功能说明；高（功能发布），待复测（性能与节省幅度）。\n- **趋势：** T03/T06 持续升温；开放模型生态的竞争延伸到工作流基础设施。\n\n### 6. AutoBench 社区研究质疑现有 LLM 路由器的质量成本收益\n\n- **发生了什么：** 研究团队在 Hugging Face 社区发表对 7 个路由器、17 种设置的成本感知测试，称没有设置在其模型池和指标下同时优于固定调用中档模型的质量与成本。原始调用时间为 2026-08-30 至 09-01，文章发表于 10 月 26 日；结果不代表最新版本的全市场表现。\n- **为什么重要 / 视角：** 产品决策、内容选题。购买路由器前先用本业务提示集比较固定模型、多模型选择器和完整任务费用。\n- **发布时间 / 类型 / 原始信源：** 2026-10-26（文章日期；实验更早），[AutoBench 团队文章](https://huggingface.co/blog/PeterKruger/router-benchmark-2026-10)。\n- **交叉验证 / 可信度：** 研究者自报方法与结果；独立于被测供应商，但本轮未复跑。中（给定实验的报道），待验证（跨任务/版本外推）。\n- **趋势：** T01/T06 待验证；为动态模型路由增加反向证据。\n\n## 连续追踪与缺口\n\n- **首次出现：** GPT-6.1 Terra、Anthropic S-1 声明、OpenAI 新科研审阅安排。\n- **持续升温：** 模型/Agent 的任务级成本、工作活动测量、开放模型基础设施。\n- **待验证：** Terra 的独立效果与安全；SEC 招股书财务及治理细节；科研结论的外部审阅；Signals 外推；路由器更新后结果。\n- **覆盖缺口：** 本期是延迟、高信号短版；未宣称穷尽全球 24 小时的中英文消息。世界模型与 AI 游戏在本轮未核到有新独立交付的同级事项，不把旧演示重报。\n\n> 行业资讯，不构成投资或法律建议；重要决策请核对原始信源和适用条件。\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid \u8bed\u6cd5\u9519\u8bef\uff1a" + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Weekly Briefing · 2026-W43 (October 19–25)</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="../../weekly/2026-W43.html" lang="zh-CN">中文</a><a href="2026-W43.html" lang="en" aria-current="page">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI Weekly Briefing · 2026-W43 (October 19–25)\n\n[English (current)](2026-W43.md) · [中文](../../weekly/2026-W43.md)\n\n- **Compiled:** October 27, 2026, Asia/Shanghai, after the full calendar week; this is not an on-time October 26 publication.\n- **Basis:** The [seven October 19–25 daily briefs](../INDEX.md). October 24 was an early edition and October 25 caught up on older releases. We group by original publication date and evidence strength, not by the count of backfilled items.\n\n## Key conclusions\n\n1. **Model-delivery decisions now turn on licenses, deployment responsibility, and cost per completed task.** MiniMax M3.1 Flash weights are downloadable with commercial-license limits. Google Cloud added more OpenAI/Claude purchasing routes, while Claude deployment modes have different data processors. DeepInfer and llm-d serve different inference layers and cannot be compared by one score.\n2. **Agent acceptance criteria are becoming actionable.** Decisions API general availability, ThinkingBox's repeated-success study, and OpenAI's research-environment containment disclosure all point to separate tests for one-off correctness, sustained success, permissions, and recovery.\n3. **World models, vision, and embodied data occupy different product layers.** Tencent Hy-Nomas offers interactive-video weights/code; NVIDIA Cosmos3-H-Dreams targets surgical-action-conditioned simulation; WeVisOne-VL is an image-perception model; AGIBOT released physical-reasoning data. Video FPS is not generation throughput; research simulation is not a mature game or clinical system.\n4. **Capital, compute, and software-adoption evidence remain different.** Private financing reports, public-market moves, Nscale's power access, the TSMC construction accident, and enterprise employee reach do not separately establish demand, delivery dates, or ROI.\n5. **Policy and safety claims require scope.** The U.S. DeepSeek federal civilian procurement rule is not a private-use ban. PHP vulnerability fixes are real public-software outcomes; model-assisted discovery workflows and production security capability need separate assessment.\n\n```mermaid\nflowchart LR\n  A[\"Weekly releases and catch-ups\"] --> B[\"Check original dates and delivered assets\"]\n  B --> C[\"Test license, cost, safety, and reliability\"]\n  C --> D[\"Next-cycle decisions\"]\n  E[\"Counterevidence and unproven claims\"] --> C\n```\n\n## Daily increment index\n\n| Date | Main increment | Evidence boundary |\n| --- | --- | --- |\n| [Oct 19](../daily/2026-10/2026-10-19.md) | Benefit-fund proposal, Character.AI/Disney, Nscale power | Proposal is not completed; project risk is not cancellation of all cooperation |\n| [Oct 20](../daily/2026-10/2026-10-20.md) | MiniMax API, migration evaluation, reviewable generation | Vendor speed claims are not independent ROI |\n| [Oct 21](../daily/2026-10/2026-10-21.md) | Federal procurement rule, inference stack, vertical agents | Separate policy scope from code delivery |\n| [Oct 22](../daily/2026-10/2026-10-22.md) | Model distribution, PHP fixes, sandboxes, multimodal data | Private preview differs from GA; apply patches first |\n| [Oct 23](../daily/2026-10/2026-10-23.md) | Task reliability, retrieval/spatial data, research world model | Repeated success differs from any one success |\n| [Oct 24](../daily/2026-10/2026-10-24.md) | Open-weight licenses, cloud buying, capital, chip construction | Early edition; financing reports and output effects need checks |\n| [Oct 25](../daily/2026-10/2026-10-25.md) | Hy-Nomas, containment red team, embodied data, voice | October 20–23 catch-ups; no major same-day new launch |\n\n## Trend evolution, counterevidence, and next signals\n\n| Trend | Change this week | Disproven or not established | Next signal |\n| --- | --- | --- | --- |\n| T01 Agents | More specific task decisions, repeated success, and permission boundaries | One-off success is not long-run reliability; a repaired escape is not zero risk | Final task state, retry cost, boundary violations, rollback |\n| T02/T05 World models / AI gaming | Separate assets in interactive video, robot simulation, visual perception, and training data | Output at 24 FPS is not generation speed; embodied models are not game runtimes | 10–30 minute state consistency, latency, task transfer |\n| T03/T06 Open weights and infrastructure | More weights, inference frameworks, and cloud deployment modes | Open weights are not open source; a multi-vendor listing is not a shared contractual boundary | Commercial licenses, same-task total cost, region/data responsibility |\n| T07 Policy and safety | Federal procurement scope, PHP fixes, and containment red team became more concrete | A universal U.S. DeepSeek ban is false; vendor red teaming is not an external audit | Implementation scope, patch adoption, independent attacks |\n| T08 Commercial value | Capital, compute, and enterprise adoption figures moved in parallel | Employee reach, funding totals, or share moves alone do not establish ROI | Paid retention, gross margin, power access, delivery rate |\n\n## Refuted claims and continuing watch\n\n- **False:** “MiniMax M3.1 Flash is OSI open source.” It is open weight with commercial restrictions; see the [October 24 brief](../daily/2026-10/2026-10-24.md).\n- **False:** “The DeepSeek rule covers all U.S. private use.” It concerns federal civilian agency procurement and IT systems; see the [October 21 brief](../daily/2026-10/2026-10-21.md).\n- **Unproven:** “World models can already generate stable, mature playable games.” Long-horizon player studies, state consistency, latency, and cost remain necessary.\n- **Watch:** Approval and governance of Anthropic's benefit fund; Character.AI court process; independent Hy-Nomas and voice-agent tests; Nscale power and contract status.\n\n## Method and limits\n\nWe did not rerun model, game, robot, or cost experiments. An early edition and retrospective catch-ups mean the number of daily items is not an industry-activity statistic. Opinions, company claims, and independent tests remain distinct. This is not investment or legal advice.\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid syntax error: " + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
