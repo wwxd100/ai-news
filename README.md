@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>Source-verified global AI industry briefings for product decisions and editorial planning<br>with investment monitoring and technical context as additional lenses</p>
 <p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
-<p><a href="en/daily/2026-10/2026-10-27.md">Read the latest brief</a> · <a href="en/weekly/2026-W43.md">Read W43</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+<p><a href="en/daily/2026-11/2026-11-02.md">Read the latest brief</a> · <a href="en/weekly/2026-W43.md">Read W43</a> · <a href="en/INDEX.md">Browse the archive</a></p>
 </div>
 
 ---
@@ -11,7 +11,7 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 
 ## Current key trends
 
-**Latest edition:** The [late October 27 brief](en/daily/2026-10/2026-10-27.md) covers GPT-6.1 Terra, Anthropic's proposed-IPO filing, and OpenAI's AI-assisted research claims with their independent-review gaps. [October 26](en/daily/2026-10/2026-10-26.md) was backfilled separately as a no-major-update edition. The [W43 review](en/weekly/2026-W43.md) covers October 19–25.
+**Latest edition:** The [November 2 late catch-up](en/daily/2026-11/2026-11-02.md) covers Google Genie 4, the OpenAI–ServiceNow workflow expansion, GPT-6 Rosalind Research, and updated governance signals. It explicitly records the missing October 28–31 daily runs.
 
 1. **Policy boundaries now affect model supply chains, not only app access.** The [US Federal Register's DeepSeek order](en/daily/2026-10/2026-10-21.md) applies to federal civilian procurement and IT systems, including specified third-party implementations; it is not a universal US private-use ban. Check the July signature and October publication timeline.
 2. **Model competition is shifting from announcements to cost per completed task.** [GPT-6.1 Terra](en/daily/2026-10/2026-10-27.md) adds a lower-priced visual/computer-use option, but its strong benchmark figures are vendor-reported. [MiniMax M3.1 Flash weights](en/daily/2026-10/2026-10-24.md) are downloadable under a community license requiring attribution and authorization above $20 million annual revenue. Compare licenses, hardware, quality, retries, and end-to-end cost.
@@ -30,6 +30,7 @@ flowchart LR
 
 ## Historical content
 
+- [2026-11-02 AI Daily Brief, late catch-up](en/daily/2026-11/2026-11-02.md) · [中文](daily/2026-11/2026-11-02.md)
 - [2026-10-27 AI Daily Brief, late](en/daily/2026-10/2026-10-27.md) · [中文](daily/2026-10/2026-10-27.md)
 - [2026-10-26 AI Daily Brief, backfilled](en/daily/2026-10/2026-10-26.md) · [中文](daily/2026-10/2026-10-26.md)
 - [2026-W43 Weekly Brief](en/weekly/2026-W43.md) · [中文](weekly/2026-W43.md)

@@ -61,6 +61,10 @@
 ## 周报
 
 - [2026-W43 AI 周报（10-19 至 10-25，延迟补编）](weekly/2026-W43.md) · [English](en/weekly/2026-W43.md) · [HTML](weekly/2026-W43.html)
+
+## 2026-11
+
+- [2026-11-02 AI 日报（延迟补档，覆盖 10-28 至 11-02）](daily/2026-11/2026-11-02.md) · [English](en/daily/2026-11/2026-11-02.md) · [HTML](daily/2026-11/2026-11-02.html)
 - [2026-W42 AI 周报（10-12 至 10-18）](weekly/2026-W42.md) · [English](en/weekly/2026-W42.md) · [HTML](weekly/2026-W42.html)
 - [2026-W41 AI 周报（10-05 至 10-11，部分补档）](weekly/2026-W41.md) · [HTML](weekly/2026-W41.html)
 - [2026-W40 AI 周报（09-28 至 10-04，资料完整性受限）](weekly/2026-W40.md)

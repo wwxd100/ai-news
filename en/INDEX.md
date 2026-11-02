@@ -4,6 +4,10 @@
 
 ## 2026
 
+### November
+
+- [2026-11-02 AI Daily Brief (late catch-up, October 28–November 2)](daily/2026-11/2026-11-02.md) · [HTML](daily/2026-11/2026-11-02.html) · [中文](../daily/2026-11/2026-11-02.md)
+
 ### October
 
 - [2026-10-27 AI Daily Brief (six high-signal items, late)](daily/2026-10/2026-10-27.md) · [HTML](daily/2026-10/2026-10-27.html) · [中文](../daily/2026-10/2026-10-27.md)
