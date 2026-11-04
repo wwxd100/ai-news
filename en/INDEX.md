@@ -6,7 +6,13 @@
 
 ### November
 
+- [2026-11-03 AI Daily Brief](daily/2026-11/2026-11-03.md) · [HTML](daily/2026-11/2026-11-03.html) · [中文](../daily/2026-11/2026-11-03.md)
 - [2026-11-02 AI Daily Brief (late catch-up, October 28–November 2)](daily/2026-11/2026-11-02.md) · [HTML](daily/2026-11/2026-11-02.html) · [中文](../daily/2026-11/2026-11-02.md)
+
+### Period reviews
+
+- [2026-W44 Weekly Brief (incomplete coverage)](weekly/2026-W44.md) · [HTML](weekly/2026-W44.html) · [中文](../weekly/2026-W44.md)
+- [2026-10 Monthly Brief (incomplete coverage)](monthly/2026-10.md) · [HTML](monthly/2026-10.html) · [中文](../monthly/2026-10.md)
 
 ### October
 

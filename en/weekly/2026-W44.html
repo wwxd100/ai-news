@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Weekly Briefing · 2026-W44 (October 26–November 1; incomplete coverage)</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="../../weekly/2026-W44.html" lang="zh-CN">中文</a><a href="2026-W44.html" lang="en" aria-current="page">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI Weekly Briefing · 2026-W44 (October 26–November 1; incomplete coverage)\n\n[English (current)](2026-W44.md) · [中文](../../weekly/2026-W44.md)\n\n- **Compiled:** November 3, 2026, after the period ended; coverage is incomplete.\n- **Basis:** The [October 26 backfill](../daily/2026-10/2026-10-26.md), [late October 27 edition](../daily/2026-10/2026-10-27.md), and items in the [November 2 catch-up](../daily/2026-11/2026-11-02.md) explicitly dated October 28–31. No separate October 28–31 or November 1 daily editions exist. Missing editions cannot establish an absence of news.\n\n## Key conclusions\n\n1. **Model cost and graphical-interface ability advanced together.** GPT-6.1 Terra has a listed API and prices, while performance remains vendor evaluated. Judge it on completed-task cost and recovery.\n2. **World models gained a new research preview.** Genie 4 supports interaction and native audio, but Google acknowledges long-run drift. Mature AI gaming remains to be demonstrated.\n3. **Capital and research claims entered public scrutiny.** Anthropic's S-1 can be checked in the SEC index, though the offering is not effective. OpenAI's mathematical and physics results require independent scholarly review.\n4. **Specialist agents and governance gained tighter boundaries.** ServiceNow workflow connections, Rosalind limited access, the Model Spec revision, and training-preference signal concern execution permissions, eligibility, safety, and website choice respectively.\n\n```mermaid\nflowchart LR\n  A[\"Documented weekly releases\"] --> B[\"Separate delivery, preview, and claims\"]\n  B --> C[\"Independent task tests and outside review\"]\n  D[\"Missing daily editions\"] --> C\n```\n\n## Trends, counterevidence, and next signals\n\n| Trend | Observation | Unproven or contrary evidence | Next signal |\n| --- | --- | --- | --- |\n| T01/T03 Models and agents | Terra, ServiceNow, Rosalind add task and vertical entry points | Vendor scores, partnerships, and limited preview are not general deployment | Real-task success, permissions, cost |\n| T02/T05 World models | Genie 4 trusted-tester preview | Google acknowledges long-run object and scene drift | Sustained player tests, input delay, cost per minute |\n| T07 Governance | Training-preference signal, Model Spec update, specialist access | Signal implementation is planned; policy text is not industry-wide effect | Implementation, external audit, incident rates |\n| T08/T09 Capital and research | S-1 filing, AI-assisted research claims | No completed listing; formal artifacts are not scholarly acceptance | Prospectus updates, public expert reviews |\n\n## Refuted claims and method limits\n\n- **False:** “Anthropic has completed an IPO.” The SEC records a proposed-offering S-1; the registration statement is not effective.\n- **Unproven:** “Genie 4 reliably supports mature long-session games.” Google lists long-run consistency limits.\n- **Unproven:** “AI has produced accepted ETH or quantum-field-theory conclusions.” Outside review is ongoing.\n- The week has major collection gaps. This report summarizes documented material and does not measure event volume or geographic share.\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid syntax error: " + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>

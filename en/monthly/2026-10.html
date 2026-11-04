@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Monthly Briefing · 2026-10 (incomplete daily coverage)</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="../../monthly/2026-10.html" lang="zh-CN">中文</a><a href="2026-10.html" lang="en" aria-current="page">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI Monthly Briefing · 2026-10 (incomplete daily coverage)\n\n[English (current)](2026-10.md) · [中文](../../monthly/2026-10.md)\n\n- **Compiled:** November 3, 2026, from the [archive index](../INDEX.md) and [W41 (Chinese only)](../../weekly/2026-W41.md), [W42](../weekly/2026-W42.md), [W43](../weekly/2026-W43.md), and [W44](../weekly/2026-W44.md). October 28–31 have no separate daily editions; some other editions were retrospective or early. Event counts cannot represent the full month.\n\n## Key conclusions\n\n1. **Agents moved from chat toward persistent tasks, tools, and permission governance.** Model capability, workflow connections, and recoverable work advanced together. A demo or vendor benchmark does not establish sustained ROI.\n2. **World models followed several distinct paths.** Odyssey-3, Matrix-Game 4.0, Hy-Nomas, and Genie 4 respectively offer a playable preview, hybrid engine, interactive-video weights, and trusted-tester preview. Robot and laboratory world models have other task goals. Long-run consistency, latency, and cost remain shared gates.\n3. **Open weights, cloud distribution, and compute supply jointly shape usability.** MiniMax M3.1 Flash and other weights require license and hardware checks; Google Cloud procurement modes change data responsibility; grid connection and construction safety affect compute delivery.\n4. **Safety and research verification moved toward inspectable materials.** PHP fixes, containment red teaming, policy scope, AI-assisted research proofs, and Anthropic's S-1 each require their own primary files, outside validation, and implementation status.\n\n```mermaid\nflowchart LR\n  A[\"Model, tool, and capital releases\"] --> B[\"Assets and licenses\"]\n  B --> C[\"Long-run tasks, permissions, outside tests\"]\n  C --> D[\"Product, editorial, investment decisions\"]\n  E[\"Missing dates and counterevidence\"] --> C\n```\n\n## Trend evolution and key events\n\n| Trend | Evidence this month | Unproven / contrary evidence | Next signal |\n| --- | --- | --- | --- |\n| Agent task systems | GPT-6 series, Decisions API, DeepSeek Search/Fetch, ServiceNow connection | One-off success differs from long-run reliability; seats are not ROI | Final task state, handoff, permissions, cost per task |\n| World models / AI gaming | Odyssey-3, Matrix-Game, Hy-Nomas, Genie 4 offer different access modes | Playback FPS is not generation throughput; a research preview is not a mature game | Sustained player tests, state coherence, input delay |\n| Open weights and multimodal | MiniMax, Meta, Mistral and others shipped weights or previews; voice, vision, video stacks grew | Open weights are not OSI open source; vendor scores are not independent tests | License, target-asset quality, actual hardware cost |\n| Business and infrastructure | Anthropic proposed-IPO S-1, OpenAI financing reports, cloud distribution, Nscale grid issue | An S-1 is not a listing; funding reports and user seats are not profit | Financial disclosure, margin, grid access, delivery |\n| Governance and research | Federal procurement scope, PHP patches, containment red team, AI research claims | Procurement limits are not a universal private ban; formal artifacts are not scholarly consensus | Implementation texts, independent security tests, expert review |\n\n## Refuted or corrected claims\n\n- “No October 8 world-model preview” was corrected by the [Odyssey-3 catch-up](../weekly/2026-W42.md).\n- “Disney acquired all of Character.AI” is false; see [W42](../weekly/2026-W42.md).\n- “China formally banned all 23 AI technologies” and “the U.S. banned private DeepSeek use” misstate the two policies' scopes.\n- “Open weights mean open source,” “video generation proves a mature game,” and “funding or seats prove ROI” remain unsupported.\n\n## Continuing watch and method limits\n\n- Watch in November: Genie 4 and Hy-Nomas long-session tests, agent permissions and task costs, open-weight commercial licenses, Anthropic's S-1 process, and independent reviews of AI research claims.\n- Reports contain retrospective catch-ups and no separate October 28–31 dailies. This archive cannot measure industry release frequency, China/U.S. share, or investment returns. This report is not investment or legal advice.\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid syntax error: " + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
