@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>面向产品决策与内容选题的全球 AI 行业资讯与研究简报<br>兼顾投资观察与技术背景梳理</p>
 <p><a href="README.md">English</a> · <strong>中文</strong></p>
-<p><a href="daily/2026-11/2026-11-06.md">阅读最新日报</a> · <a href="weekly/2026-W44.md">阅读 W44 周报</a> · <a href="monthly/2026-10.md">阅读十月月报</a> · <a href="INDEX.md">浏览完整索引</a></p>
+<p><a href="daily/2026-11/2026-11-07.md">阅读最新日报</a> · <a href="weekly/2026-W44.md">阅读 W44 周报</a> · <a href="monthly/2026-10.md">阅读十月月报</a> · <a href="INDEX.md">浏览完整索引</a></p>
 </div>
 
 ---
@@ -11,7 +11,7 @@
 
 ## 当前关键趋势
 
-**最新一期：** [11 月 6 日日报](daily/2026-11/2026-11-06.md)覆盖 NVIDIA Cosmos 3 可控仿真检查点、腾讯 Hy4 的待发布权重、LeRobot v0.7.0，以及 GameScaling 补漏。[W44 周报](weekly/2026-W44.md)与[十月月报](monthly/2026-10.md)均明确标注日报缺口。
+**最新一期：** [11 月 7 日日报](daily/2026-11/2026-11-07.md)覆盖 Gemini Omni 1.2 Flash 视频编辑、限制访问的 GPT-6 Cyber、百度 ERNIE 5.5 Flash Base 权重与许可、METR 对 Anthropic 的评估，以及 Conductor 补漏。[W44 周报](weekly/2026-W44.md)与[十月月报](monthly/2026-10.md)均明确标注日报缺口。
 
 1. **政策边界开始影响模型供应链，而非仅是 App 访问。** [美国《联邦公报》的 DeepSeek 令](daily/2026-10/2026-10-21.md)针对联邦民事机构采购与 IT 系统，也包含特定第三方实现；不是美国私人使用全面禁令。7 月签署与 10 月刊登应分清。
 2. **模型竞争从发布转向单位任务成本。** [GPT-6.1 Terra](daily/2026-10/2026-10-27.md)新增较低价视觉/计算机操作选项，但亮眼榜分来自厂商自报。[MiniMax M3.1 Flash 权重](daily/2026-10/2026-10-24.md)已可下载，采用需署名且年收入超过 2000 万美元需授权的社区许可。按许可、硬件、质量、重试和完整任务成本比较。
@@ -30,6 +30,7 @@ flowchart LR
 
 ## 历史内容
 
+- [2026-11-07 AI 日报](daily/2026-11/2026-11-07.md) · [English](en/daily/2026-11/2026-11-07.md)
 - [2026-11-06 AI 日报](daily/2026-11/2026-11-06.md) · [English](en/daily/2026-11/2026-11-06.md)
 - [2026-11-05 AI 日报](daily/2026-11/2026-11-05.md) · [English](en/daily/2026-11/2026-11-05.md)
 - [2026-11-04 AI 日报](daily/2026-11/2026-11-04.md) · [English](en/daily/2026-11/2026-11-04.md)

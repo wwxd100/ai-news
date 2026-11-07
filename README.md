@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>Source-verified global AI industry briefings for product decisions and editorial planning<br>with investment monitoring and technical context as additional lenses</p>
 <p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
-<p><a href="en/daily/2026-11/2026-11-06.md">Read the latest brief</a> · <a href="en/weekly/2026-W44.md">Read W44</a> · <a href="en/monthly/2026-10.md">Read October</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+<p><a href="en/daily/2026-11/2026-11-07.md">Read the latest brief</a> · <a href="en/weekly/2026-W44.md">Read W44</a> · <a href="en/monthly/2026-10.md">Read October</a> · <a href="en/INDEX.md">Browse the archive</a></p>
 </div>
 
 ---
@@ -11,7 +11,7 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 
 ## Current key trends
 
-**Latest edition:** The [November 6 brief](en/daily/2026-11/2026-11-06.md) covers NVIDIA Cosmos 3 interactive simulation checkpoints, Tencent Hy4's planned weight release, LeRobot v0.7.0, and a GameScaling catch-up. [W44](en/weekly/2026-W44.md) and the [October review](en/monthly/2026-10.md) explicitly flag missing daily editions.
+**Latest edition:** The [November 7 brief](en/daily/2026-11/2026-11-07.md) covers Gemini Omni 1.2 Flash video editing, restricted GPT-6 Cyber access, Baidu ERNIE 5.5 Flash Base weights and licensing, METR's Anthropic assessment, and a Conductor catch-up. [W44](en/weekly/2026-W44.md) and the [October review](en/monthly/2026-10.md) explicitly flag missing daily editions.
 
 1. **Policy boundaries now affect model supply chains, not only app access.** The [US Federal Register's DeepSeek order](en/daily/2026-10/2026-10-21.md) applies to federal civilian procurement and IT systems, including specified third-party implementations; it is not a universal US private-use ban. Check the July signature and October publication timeline.
 2. **Model competition is shifting from announcements to cost per completed task.** [GPT-6.1 Terra](en/daily/2026-10/2026-10-27.md) adds a lower-priced visual/computer-use option, but its strong benchmark figures are vendor-reported. [MiniMax M3.1 Flash weights](en/daily/2026-10/2026-10-24.md) are downloadable under a community license requiring attribution and authorization above $20 million annual revenue. Compare licenses, hardware, quality, retries, and end-to-end cost.
@@ -30,6 +30,7 @@ flowchart LR
 
 ## Historical content
 
+- [2026-11-07 AI Daily Brief](en/daily/2026-11/2026-11-07.md) · [中文](daily/2026-11/2026-11-07.md)
 - [2026-11-06 AI Daily Brief](en/daily/2026-11/2026-11-06.md) · [中文](daily/2026-11/2026-11-06.md)
 - [2026-11-05 AI Daily Brief](en/daily/2026-11/2026-11-05.md) · [中文](daily/2026-11/2026-11-05.md)
 - [2026-11-04 AI Daily Brief](en/daily/2026-11/2026-11-04.md) · [中文](daily/2026-11/2026-11-04.md)
