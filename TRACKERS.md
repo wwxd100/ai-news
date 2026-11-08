@@ -1,6 +1,18 @@
 # 持续趋势追踪
 
-更新日期：2026-11-07（新增 Gemini Omni 1.2 Flash、GPT-6 Cyber、ERNIE 5.5 Flash Base 与 METR 评估，补录 Conductor；W44 与十月月报仍标明缺档）
+更新日期：2026-11-08（新增 Project EVE、Kanana-2-v-decide 与 Hacktron 安全合作；W44 与十月月报仍标明缺档）
+
+## 2026-11-08 · 跨主题追踪
+
+- **T01/T05：** Project EVE 将游戏市场回放与实时团队任务用于 Agent 评估；市场收益不能外推投资，实时战斗依赖定制脚手架，破坏者识别薄弱。
+- **T01/T02：** Kakao 交付多模态决策模型权重；结构化判断与通用 Agent 分工可测试，真实样本校准和延迟待复核。
+- **T07：** OpenAI 扩大 Hacktron 的 Daybreak Red 访问以测试系统与第三方服务边界，修复成效待披露。
+
+```mermaid
+flowchart LR
+  A["游戏与业务实验"] --> B["Agent 决策与失效"]
+  B --> C["脚手架、模型及安全验证"]
+```
 
 ## 2026-11-07 · 跨主题追踪
 
