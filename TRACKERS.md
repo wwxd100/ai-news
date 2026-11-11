@@ -1,6 +1,21 @@
 # 持续趋势追踪
 
-更新日期：2026-11-10（新增 Fable/Mythos 5.2、Control Room 与 K-EXAONE 2.5 API；补齐 11 月 9 日日报和 W45 周报）
+更新日期：2026-11-11（新增 Carbon、Robotics 2.5、AlphaProof Code、Claude 协作产物与商业 Agent，补录 11 月 9 日遗漏）
+
+## 2026-11-11 · 跨主题追踪
+
+- **T01/T04：** Gemini 4 Carbon 扩大 API 访问，Muse Ember 为高频 Agent 子任务提供低价 API；报价、开放权重和每任务实际费用分别核对。
+- **T01/T03：** Claude Sheets、Whiteboards、Data 和 ChatGPT Business Agents 把 Agent 输出嵌入可编辑工作空间与商业资料；会议能力尚未上线，Business Agent 限美国合资格商家。
+- **T02/T05：** Gemini Robotics 2.5 与 NVIDIA GR00T 2 关注具身操作，不能混同可玩世界模型；产线概念验证和至少一次成功均不等于长期稳定性。
+- **T07：** AlphaProof Code 的 Signal 形式化验证限于明确指定性质与代码范围；开放产物可供外部审查。
+- **T08/T09：** TPU 8tx/8i Max、AWS Marketplace 和 Adobe 合作分别涉及基础设施、采购及创作入口，未来功能与实际采用仍待证实。
+
+```mermaid
+flowchart LR
+  A["模型和应用交付"] --> B["任务、权限及价格边界"]
+  C["具身与安全研究"] --> B
+  B --> D["独立复测和长期效果"]
+```
 
 ## 2026-11-10 · 跨主题追踪
 
