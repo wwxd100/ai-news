@@ -6,6 +6,8 @@
 
 ### November
 
+- [2026-11-13 AI Daily Brief (six high-signal developments)](daily/2026-11/2026-11-13.md) · [HTML](daily/2026-11/2026-11-13.html) · [中文](../daily/2026-11/2026-11-13.md)
+- [2026-11-12 AI Daily Brief (four retrospective catch-ups)](daily/2026-11/2026-11-12.md) · [HTML](daily/2026-11/2026-11-12.html) · [中文](../daily/2026-11/2026-11-12.md)
 - [2026-11-11 AI Daily Brief (12 high-signal items, four catch-ups)](daily/2026-11/2026-11-11.md) · [HTML](daily/2026-11/2026-11-11.html) · [中文](../daily/2026-11/2026-11-11.md)
 - [2026-11-10 AI Daily Brief (two high-signal items)](daily/2026-11/2026-11-10.md) · [HTML](daily/2026-11/2026-11-10.html) · [中文](../daily/2026-11/2026-11-10.md)
 - [2026-11-09 AI Daily Brief (two high-signal items; late catch-up)](daily/2026-11/2026-11-09.md) · [HTML](daily/2026-11/2026-11-09.html) · [中文](../daily/2026-11/2026-11-09.md)

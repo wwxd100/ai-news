@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily Brief · 2026-11-12 (catch-up)</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="../../../daily/2026-11/2026-11-12.html" lang="zh-CN">中文</a><a href="2026-11-12.html" lang="en" aria-current="page">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI Daily Brief · 2026-11-12 (catch-up)\n\n[English (current)](2026-11-12.md) · [中文](../../../daily/2026-11/2026-11-12.md)\n\n- **Collection note:** Compiled retrospectively on November 13, 2026. All four primary releases predate compilation; their original dates are stated. This is not presented as monitoring completed before 11:00 Beijing time on November 12.\n- **Edition:** Four catch-ups, with no filler. [Archive](../../INDEX.md) · [Trend tracker](../../../TRACKERS.md).\n\n## Key conclusions\n\n1. **Chinese models are extending long-task and multimodal delivery.** Qwen4-Max-Preview has a time-limited Token Plan; the ERNIE 5.5 Flash Preview API is live, while its post-trained weights remain a future commitment. Vendor demonstrations and scores need independent task testing.\n2. **Two kinds of inspectable world-model artifact arrived.** Runway released Praxis-1 robot video-action weights and code; IFM released PAN 2 video world-model weights and training/inference code. One targets robot control and the other action-conditioned simulation. Neither proves a playable game world.\n\n```mermaid\nflowchart LR\n  A[\"Preview models and APIs\"] --> C[\"Real-task retesting\"]\n  B[\"World-model weights and code\"] --> C\n  C --> D[\"License, reliability and cost decisions\"]\n```\n\n## Notable developments\n\n### 1. Alibaba Cloud provides time-limited Qwen4-Max-Preview access\n\n- **What happened:** Alibaba Cloud documents `qwen4-max-preview` with text, image/video understanding, tool use and structured output, and a one-million-token context limit. The preview runs from 10:00 Beijing time November 11 to 24:00 November 25, supports only Token Plan and will be retired afterward.\n- **Why it matters / lenses:** Product decisions and investment monitoring. Complex agent and multimodal workflows can be tested, but a temporary plan does not establish long-term API pricing or open weights.\n- **Published / type / primary sources:** November 11, 2026, official Alibaba Cloud product documentation; [Chinese](https://help.aliyun.cn/zh/model-studio/qwen4-max-preview) · [English](https://help.aliyun.com/en/model-studio/qwen4-max-preview).\n- **Corroboration / confidence:** The two languages come from the same provider, not independent corroboration. Availability and dates: high; capability and task economics await independent testing.\n- **Trend:** T01/T03 first tracked here; missed November 11 release.\n\n### 2. Baidu releases ERNIE 5.5 Flash Preview\n\n- **What happened:** Baidu calls this the first post-trained version of its earlier Base model, with 280B total/14B active parameters and a one-million-token context. The API is on Qianfan. Weights are promised by November 25 and must not be described as already released. Game, 3D and video demonstrations used an agent framework and outside tools/assets.\n- **Why it matters / lenses:** Product decisions, AI in gaming and editorial planning. Retest the long-running game-development demonstration for runnable builds, asset licenses, retries and human involvement. This is a coding-agent example, not a game world model.\n- **Published / type / primary sources:** November 11, 2026, official Baidu model announcement; [Chinese](https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/) · [English](https://ernie.baidu.com/release/ernie-5-5-flash-preview/).\n- **Corroboration / confidence:** Both versions are Baidu materials. API delivery: high; vendor demonstrations, benchmarks and future weights require verification.\n- **Trend:** T01/T05 first tracked here; missed November 11 release.\n\n### 3. Runway releases Praxis-1 robot world-action artifacts\n\n- **What happened:** Runway provides the 27B Praxis-1 base and robot-fine-tuned checkpoints plus inference and fine-tuning code under Apache 2.0. The model predicts video and robot actions jointly. The company reports 46.2% success on RoboLab-120.\n- **Why it matters / lenses:** Product decisions, technical context and investment monitoring. Video pretraining now has a robotics-control delivery path. Keep downloadable artifacts separate from real-robot generalization and long-task reliability; measure deployment memory and adaptation cost.\n- **Published / type / primary sources:** November 11, 2026, Runway announcement; [release](https://runway.com/news/company-news/praxis-1-is-now-available) · [research](https://runway.com/research/praxis-1-video-pretraining-to-robot-control) · [code](https://github.com/runwayml/praxis-1-oss).\n- **Corroboration / confidence:** Weights and code can be inspected; the research and release share a publisher. Rankings and real-robot outcomes need independent retesting. This is distinct from a playable game world model.\n- **Trend:** T02 warming; September's preview has become artifact delivery.\n\n### 4. IFM releases PAN 2 action-conditioned video world model (November 10 catch-up)\n\n- **What happened:** MBZUAI's IFM says PAN 2 simulates subsequent video from a starting scene and text action, and released weights plus training/inference code under Apache 2.0. Its own report calls long-term world consistency an open challenge.\n- **Why it matters / lenses:** Technical context, AI in gaming and editorial planning. Study action-conditioned simulation and reproducibility; short video and scores do not establish a persistent interactive game.\n- **Published / type / primary sources:** November 10, 2026, IFM press release and technical blog; [release](https://ifm.ai/pan2/press-release/) · [technical blog](https://ifm.ai/blog/pan2/).\n- **Corroboration / confidence:** Two materials from one institution are not independent tests. Artifact release: high; physical consistency and long-horizon performance need outside evaluation.\n- **Trend:** T02/T05 first tracked here; missed November 10 release.\n\n## Tracking and limitations\n\n- **To verify:** Qwen4 availability after preview, promised ERNIE weights, Praxis-1 cross-hardware reliability, and PAN 2 long-horizon state consistency.\n- **Coverage limit:** This retrospective edition does not claim complete real-time coverage of November 11–12. Publication dates and precise launch times differ; vendor examples are not independent acceptance tests.\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid syntax error: " + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>

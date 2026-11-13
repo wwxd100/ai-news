@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>Source-verified global AI industry briefings for product decisions and editorial planning<br>with investment monitoring and technical context as additional lenses</p>
 <p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
-<p><a href="en/daily/2026-11/2026-11-11.md">Read the latest brief</a> · <a href="en/weekly/2026-W45.md">Read W45</a> · <a href="en/monthly/2026-10.md">Read October</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+<p><a href="en/daily/2026-11/2026-11-13.md">Read the latest brief</a> · <a href="en/weekly/2026-W45.md">Read W45</a> · <a href="en/monthly/2026-10.md">Read October</a> · <a href="en/INDEX.md">Browse the archive</a></p>
 </div>
 
 ---
@@ -11,7 +11,7 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 
 ## Current key trends
 
-**Latest edition:** The [November 11 brief](en/daily/2026-11/2026-11-11.md) covers Gemini 4 Carbon, robotics and formal verification, editable Claude workspaces, business agents, and four clearly dated catch-ups. [W45](en/weekly/2026-W45.md) reviews the prior week with coverage limits.
+**Latest edition:** The [November 13 brief](en/daily/2026-11/2026-11-13.md) covers Gemini 4 Hydrogen, Flow storytelling tools, Salesforce speech, safety testing and intelligent eyewear. The missing [November 12 edition](en/daily/2026-11/2026-11-12.md) was compiled retrospectively and labeled as a catch-up. [W45](en/weekly/2026-W45.md) reviews the prior week with coverage limits.
 
 1. **Policy boundaries now affect model supply chains, not only app access.** The [US Federal Register's DeepSeek order](en/daily/2026-10/2026-10-21.md) applies to federal civilian procurement and IT systems, including specified third-party implementations; it is not a universal US private-use ban. Check the July signature and October publication timeline.
 2. **Model competition is shifting from announcements to cost per completed task.** [GPT-6.1 Terra](en/daily/2026-10/2026-10-27.md) adds a lower-priced visual/computer-use option, but its strong benchmark figures are vendor-reported. [MiniMax M3.1 Flash weights](en/daily/2026-10/2026-10-24.md) are downloadable under a community license requiring attribution and authorization above $20 million annual revenue. Compare licenses, hardware, quality, retries, and end-to-end cost.
@@ -22,6 +22,7 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 7. **Safety, deployment, and delivery constraints are becoming concrete.** [China's proposed export catalog and immediate registration](en/daily/2026-10/2026-10-18.md) are distinct. [GDC's air-gapped search preview](en/daily/2026-10/2026-10-21.md) needs independent boundary validation; [Nscale's power-access setback](en/daily/2026-10/2026-10-19.md) shows announced compute is not guaranteed delivery.
 8. **High-capability model access and operational stops are now product constraints.** [Fable and Mythos 5.2](en/daily/2026-11/2026-11-10.md) share an underlying model but differ in safeguards and verified access. OpenAI's Control Room covers research inference workloads, with a vendor-stated maximum stop delay of 35 seconds; independent coverage and timing checks remain open.
 9. **Agent competition now spans model tiers, editable artifacts and commercial discovery.** [Gemini 4 Carbon, Muse Ember, Claude Sheets and ChatGPT Business Agents](en/daily/2026-11/2026-11-11.md) have distinct access, pricing and product roles. Compare completed tasks, permissions and conversion rather than vendor scores alone.
+10. **Routing, creative control and inspectable model artifacts need different acceptance tests.** [Hydrogen, Flow and SOV-Transcribe-1](en/daily/2026-11/2026-11-13.md) affect cost, storytelling consistency and voice accuracy, while the [Qwen, ERNIE, Praxis-1 and PAN 2 catch-up](en/daily/2026-11/2026-11-12.md) separates preview access, promised weights, robot control and world simulation.
 
 ```mermaid
 flowchart LR
@@ -32,6 +33,8 @@ flowchart LR
 
 ## Historical content
 
+- [2026-11-13 AI Daily Brief](en/daily/2026-11/2026-11-13.md) · [中文](daily/2026-11/2026-11-13.md)
+- [2026-11-12 AI Daily Brief (retrospective catch-up)](en/daily/2026-11/2026-11-12.md) · [中文](daily/2026-11/2026-11-12.md)
 - [2026-11-11 AI Daily Brief](en/daily/2026-11/2026-11-11.md) · [中文](daily/2026-11/2026-11-11.md)
 - [2026-11-10 AI Daily Brief](en/daily/2026-11/2026-11-10.md) · [中文](daily/2026-11/2026-11-10.md)
 - [2026-11-09 AI Daily Brief, late catch-up](en/daily/2026-11/2026-11-09.md) · [中文](daily/2026-11/2026-11-09.md)
