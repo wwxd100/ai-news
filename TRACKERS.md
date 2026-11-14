@@ -1,6 +1,18 @@
 # 持续趋势追踪
 
-更新日期：2026-11-13（新增 Hydrogen、Flow、SOV-Transcribe-1、Anvil 与 Gemini 眼镜；补录 11 月 11 日和 10 日遗漏）
+更新日期：2026-11-14（新增 NVIDIA CEO 交接、Gemini Wallet、llama.cpp 1.0、XYBench，并补录 A2UI 1.0）
+
+## 2026-11-14 · 跨主题追踪
+
+- **T08：** NVIDIA CEO 交接已获公司确认，交付连续性仍须以财报、客户和路线图实证核对。
+- **T01/T08：** Gemini Wallet 将个人 Agent 延伸到消费记录；官方只读声明与实际权限、隐私和建议质量分别验证。
+- **T01/T03/T04：** llama.cpp 1.0 管理本地推理接口兼容；A2UI 1.0 管理 Agent 交互产物；XYBench 补充错误前提下的用户意图评测。
+
+```mermaid
+flowchart LR
+  A["治理与平台发布"] --> B["权限和兼容性核查"]
+  B --> C["真实任务与长期交付"]
+```
 
 ## 2026-11-13 · 跨主题追踪
 
