@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily Brief · 2026-11-15</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="../../../daily/2026-11/2026-11-15.html" lang="zh-CN">中文</a><a href="2026-11-15.html" lang="en" aria-current="page">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI Daily Brief · 2026-11-15\n\n[English (current)](2026-11-15.md) · [中文](../../../daily/2026-11/2026-11-15.md)\n\n- **Collection cutoff:** November 15, 2026, 11:00 Asia/Shanghai; compiled after the cutoff. Official, research and Hugging Face sources were reviewed. Search gaps are not evidence of no industry-wide releases.\n- **Assessment: No major update today.** One missed November 13 item is recorded below and is not counted as a new release today. [Archive](../../INDEX.md) · [Trend tracker](../../../TRACKERS.md).\n\n## Key conclusions\n\n1. **The high-signal increment today does not justify a routine 20–30-item edition.** Continue tracking model tiers, agent permissions and delivered world-model artifacts without recounting old news.\n2. **Reusable datasets are also AI industry deliverables.** DeepMind released historical and live SatWeave and PARDIG data for weather and hydrology research; its accuracy claims still need outside review.\n\n```mermaid\nflowchart LR\n  A[\"Source scan\"] --> B[\"Date and novelty check\"]\n  B --> C[\"Insufficient major new items\"]\n  B --> D[\"Explicit missed-item catch-up\"]\n  C --> E[\"Short daily brief\"]\n  D --> E\n```\n\n## Catch-up development\n\n### 1. Google DeepMind opens SatWeave and PARDIG weather datasets (November 13 catch-up)\n\n- **What happened:** DeepMind released historical archives and live feeds for SatWeave satellite imagery mosaics and PARDIG precipitation data, both relevant to WeatherNext 3 development. It reports roughly 15-minute, 10-kilometer resolution for PARDIG and internal evaluation against radar and weather stations.\n- **Why it matters / lenses:** Technical context and product decisions. Reusable data may lower the barrier to training and validating weather and hydrology applications. Check license, latency, regional error and maintenance. This is a dataset release, not a new foundation model.\n- **Published / type / primary sources:** November 13, 2026, Google DeepMind research announcement; [official report](https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/) · [paper and data entry point](https://developers.google.com/earth-engine/datasets).\n- **Corroboration / confidence:** Public data access can be inspected. Accuracy comparisons are publisher-run, with no independent replication here. Delivery: high confidence; performance awaits validation.\n- **Trend:** T02/T06 first tracked here; missed November 13 item.\n\n## Tracking and limitations\n\n- **To verify:** Actual delivery after yesterday's NVIDIA leadership change, Gemini Wallet permissions, and independent regional quality checks for these datasets.\n- **Coverage limit:** A short edition means this scan found too few major incremental items. It does not imply that no AI news occurred anywhere.\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid syntax error: " + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
