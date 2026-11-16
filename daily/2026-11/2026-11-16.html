@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 · 2026-11-16</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="2026-11-16.html" lang="zh-CN" aria-current="page">中文</a><a href="../../en/daily/2026-11/2026-11-16.html" lang="en">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI 日报 · 2026-11-16\n\n[中文（当前）](2026-11-16.md) · [English](../../en/daily/2026-11/2026-11-16.md)\n\n- **采集截止：** 2026-11-16 11:00（Asia/Shanghai）；检查官方发布、Hugging Face 与科技媒体的最近更新。\n- **本期判断：今日无重大更新。** 以下 1 条是 11 月 12 日官方发布的补漏，不能算作 11 月 16 日新发布。[历史索引](../../INDEX.md) · [上周周报](../../weekly/2026-W46.md)。\n\n## 今日关键结论\n\n1. **本轮没有足够已核实的重大新讯构成 20–30 条常规日报。** 不以旧消息或未经核实的社区转载填充篇幅。\n2. **分类与路由模型值得单独评估。** Perplexity Decider v1.3 交付可下载权重与 API，用于概率判断、抽取和路由；它不是生成式 Agent，其厂商评测须在真实任务上复测。\n\n```mermaid\nflowchart LR\n  A[\"最近发布扫描\"] --> B[\"原始日期与交付核查\"]\n  B --> C[\"今日无重大新讯\"]\n  B --> D[\"11 月 12 日漏项\"]\n  C --> E[\"短版日报\"]\n  D --> E\n```\n\n## 补漏动态\n\n### 1. Perplexity 发布 Decider v1.3 与 Decider Flash v1.3（11 月 12 日补漏）\n\n- **发生了什么：** Perplexity 发布两款决策模型，支持二元/多类判断、分数和 `locate` 文本定位；Flash 为较小的蒸馏版。官方称两款均可通过 Hugging Face 下载 Apache 许可权重，也通过 OpenRouter 与 Decisions API 提供。\n- **为什么重要 / 视角：** 产品决策、技术背景。可在审核、路由和内容标注中比较概率输出、延迟与单位任务成本；阈值应在自有标注集校准。不能把分类器写成会自主执行长任务的 Agent。\n- **发布时间 / 类型 / 原始信源：** 2026-11-12，Perplexity 官方技术博客；[发布说明](https://www.perplexity.ai/hub/blog/perplexity-decider) · [API 社区公告](https://community.perplexity.ai/c/announcements/9)。\n- **交叉验证 / 可信度：** 两处均属发布方，不能当独立交叉验证；权重、许可和接口交付可外部检查，性能提升仍为厂商主张。交付可信度高，效果待独立复测。\n- **趋势：** T01/T04 持续升温；11 月 12 日漏项补录。\n\n## 连续追踪与限制\n\n- **待验证：** 决策模型在真实内容审核和模型路由中的误判、阈值漂移与总成本；上周模型/Agent 发布的权限、许可和长期效果见[W46 周报](../../weekly/2026-W46.md)。\n- **覆盖限制：** “今日无重大更新”只针对本轮核查时段与信源，不代表全球没有 AI 发布。\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid \u8bed\u6cd5\u9519\u8bef\uff1a" + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
