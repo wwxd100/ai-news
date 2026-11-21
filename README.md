@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>Source-verified global AI industry briefings for product decisions and editorial planning<br>with investment monitoring and technical context as additional lenses</p>
 <p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
-<p><a href="en/daily/2026-11/2026-11-20.md">Read the latest brief</a> · <a href="en/weekly/2026-W46.md">Read W46</a> · <a href="en/monthly/2026-10.md">Read October</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+<p><a href="en/daily/2026-11/2026-11-21.md">Read the latest brief</a> · <a href="en/weekly/2026-W46.md">Read W46</a> · <a href="en/monthly/2026-10.md">Read October</a> · <a href="en/INDEX.md">Browse the archive</a></p>
 </div>
 
 ---
@@ -11,13 +11,13 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 
 ## Current key trends
 
-**Latest edition:** The [November 20 brief](en/daily/2026-11/2026-11-20.md) covers 11 verified developments, including Genie 4's developer API, Gemini Mac computer use, Alibaba's September-quarter results and Anthropic's first Nasdaq trading day. Two entries are marked November 18 catch-ups. The [W46 weekly brief](en/weekly/2026-W46.md) synthesizes November 9–15 releases.
+**Latest edition:** The [November 21 brief](en/daily/2026-11/2026-11-21.md) covers 10 verified developments: Anthropic's IPO closing, Inkling 2 Mini, agent harness adaptation, new world-model papers and voice/commerce interfaces. Two papers are marked November 18 catch-ups. The [W46 weekly brief](en/weekly/2026-W46.md) synthesizes November 9–15 releases.
 
 1. **Policy boundaries now affect model supply chains, not only app access.** The [US Federal Register's DeepSeek order](en/daily/2026-10/2026-10-21.md) applies to federal civilian procurement and IT systems, including specified third-party implementations; it is not a universal US private-use ban. Check the July signature and October publication timeline.
 2. **Model competition is shifting from announcements to cost per completed task.** [GPT-6.1 Terra](en/daily/2026-10/2026-10-27.md) adds a lower-priced visual/computer-use option, but its strong benchmark figures are vendor-reported. [MiniMax M3.1 Flash weights](en/daily/2026-10/2026-10-24.md) are downloadable under a community license requiring attribution and authorization above $20 million annual revenue. Compare licenses, hardware, quality, retries, and end-to-end cost.
 3. **World-model research is following distinct paths: interactive simulation, robot control, and laboratory digital twins.** [NVIDIA Cosmos 3 checkpoints](en/daily/2026-11/2026-11-06.md) add controllable driving and robotics simulation; their downstream fidelity remains unproven independently. [Tencent Hy-Nomas](en/daily/2026-10/2026-10-25.md) provides weights, code, and a demo for text/camera-steered video segments, but its 24 FPS output is playback rate, not measured generation speed. [Matrix-Game 4.0](daily/2026-10/2026-10-16.md) offers a single-user demo. Neither substitutes for sustained player testing.
 4. **Agent competition extends to tools, context, and vertical workflows.** [OpenAI's Orchestra Bio acquisition and Gemini's car/SMB entry points](en/daily/2026-10/2026-10-21.md) expand distribution; [DeepSeek Search/Fetch and Tencent's memory-writing model](en/daily/2026-10/2026-10-18.md) add infrastructure options. Audit permissions, state quality, latency, and task cost.
-5. **Adoption, governance, and economic value remain separate questions.** [OpenAI Signals](en/daily/2026-10/2026-10-27.md) measures work-related messages on individual ChatGPT plans, excluding Enterprise and Codex; it is not a productivity estimate. Anthropic has [begun Nasdaq trading](en/daily/2026-11/2026-11-20.md), while the offering close still needs confirmation. Its [proposed Public Benefit Fund](en/daily/2026-10/2026-10-19.md) has separate governance status.
+5. **Adoption, governance, and economic value remain separate questions.** [OpenAI Signals](en/daily/2026-10/2026-10-27.md) measures work-related messages on individual ChatGPT plans, excluding Enterprise and Codex; it is not a productivity estimate. Anthropic has [closed its IPO and concurrent placement](en/daily/2026-11/2026-11-21.md); fund deployment and business returns remain open. Its [proposed Public Benefit Fund](en/daily/2026-10/2026-10-19.md) has separate governance status.
 6. **Multimodal production is becoming a structured, reviewable workflow.** [Gemini Notebook's outline and producer-note review](en/daily/2026-10/2026-10-20.md) adds a pre-render checkpoint. Asset reuse and sound consistency should ultimately be judged by rework time and finished quality.
 7. **Safety, deployment, and delivery constraints are becoming concrete.** [China's proposed export catalog and immediate registration](en/daily/2026-10/2026-10-18.md) are distinct. [GDC's air-gapped search preview](en/daily/2026-10/2026-10-21.md) needs independent boundary validation; [Nscale's power-access setback](en/daily/2026-10/2026-10-19.md) shows announced compute is not guaranteed delivery.
 8. **High-capability model access and operational stops are now product constraints.** [Fable and Mythos 5.2](en/daily/2026-11/2026-11-10.md) share an underlying model but differ in safeguards and verified access. OpenAI's Control Room covers research inference workloads, with a vendor-stated maximum stop delay of 35 seconds; independent coverage and timing checks remain open.
@@ -29,6 +29,7 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 14. **Frontier and vertical models now compete within permissioned workflows.** [GPT-6.2, Microsoft MAI, Gemini Tasks and NVIDIA's fiscal Q3](en/daily/2026-11/2026-11-18.md) provide model, agent and compute evidence. Keep vendor benchmark claims, application rollouts, licensed weights and shipped hardware in separate verification tracks.
 15. **Interactive world models now have a limited consumer test, while external safety evidence deepens.** [Project Genie, the GAO report and Tencent's results](en/daily/2026-11/2026-11-19.md) call for separate tests of player experience, safeguard effectiveness and AI product unit economics.
 16. **Developer access is the next world-model test, while agent tools move closer to execution.** [Genie 4 API access, Gemini Mac and Tool Retrieval](en/daily/2026-11/2026-11-20.md) need matched tests of control latency, permissions and complete-task cost. Alibaba's AI cloud growth and application loss have distinct reporting periods.
+17. **World state, agent adaptation and capital deployment now need different evidence.** [WM^MLLM and WorldRuler](en/daily/2026-11/2026-11-21.md) are author-evaluated research, Inkling 2 Mini has inspectable weights, and Anthropic's IPO has closed. Test playability and task economics; track actual deployment of proceeds.
 
 ```mermaid
 flowchart LR
@@ -39,6 +40,7 @@ flowchart LR
 
 ## Historical content
 
+- [2026-11-21 AI Daily Brief (10 verified items; two paper catch-ups)](en/daily/2026-11/2026-11-21.md) · [中文](daily/2026-11/2026-11-21.md)
 - [2026-11-20 AI Daily Brief (11 verified items; two catch-ups)](en/daily/2026-11/2026-11-20.md) · [中文](daily/2026-11/2026-11-20.md)
 - [2026-11-19 AI Daily Brief (14 high-signal items)](en/daily/2026-11/2026-11-19.md) · [中文](daily/2026-11/2026-11-19.md)
 - [2026-11-18 AI Daily Brief (13 high-signal items)](en/daily/2026-11/2026-11-18.md) · [中文](daily/2026-11/2026-11-18.md)
