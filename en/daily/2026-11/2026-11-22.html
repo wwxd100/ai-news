@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily Brief · 2026-11-22</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="../../../daily/2026-11/2026-11-22.html" lang="zh-CN">中文</a><a href="2026-11-22.html" lang="en" aria-current="page">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI Daily Brief · 2026-11-22\n\n[English (current)](2026-11-22.md) · [中文](../../../daily/2026-11/2026-11-22.md)\n\n- **Collection cutoff:** November 22, 2026, 11:00 Asia/Shanghai; deduplicated against the [previous brief](2026-11-21.md). [Index](../../INDEX.md) · [Trend tracker](../../../TRACKERS.md).\n- **Selection result: no major new update today.** After checking the official release pages of OpenAI, Anthropic, Google and Hugging Face, as well as recent papers, this edition records two previously missed developments. Their original publication dates are November 20 and 17; neither is presented as a new release today. This finding is limited to the sources scanned and is not a claim that nothing was released worldwide.\n\n## Key conclusions\n\n1. **Product interface changes merit tracking, but require real usage evidence.** ChatGPT Space is rolling out to Plus users; interactive pages and presentations can update using connected apps and tools. Permissions, collaboration efficiency and output quality remain to be tested.\n2. **Response latency, not playback frame rate, is the key interactive video metric.** The FastFrames paper reports per-frame latency on specified B200 configurations and provides model artifacts; the measurements come from the authors and do not establish long-term player experience.\n\n```mermaid\nflowchart LR\n  A[\"Product availability\"] --> B[\"Collaboration and permission tests\"]\n  C[\"Paper and model artifacts\"] --> D[\"Matched-hardware latency and quality tests\"]\n  B --> E[\"Product and editorial judgment\"]\n  D --> E\n```\n\n## Catch-up developments\n\n### 1. ChatGPT Space begins rolling out to Plus users\n\n- **What happened:** OpenAI's release notes say that, starting November 20, Space is rolling out globally to Plus users aged 18 or older. Users can create interactive pages and presentations that update using connected apps and tools. Shared content requires access permission; Free users currently cannot open shared pages, and public links are unavailable. The same update also lists Live Dictation rolling out to all plans.\n- **Why it matters / lens:** Product decisions and editorial planning. An AI workspace is moving from one-off answers toward continually updated collaborative artifacts. Check eligible access, connection permissions, update accuracy and editing cost; a rollout does not mean universal availability.\n- **Publication / type / original source:** November 20, 2026, OpenAI [ChatGPT release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes), official product documentation.\n- **Corroboration / confidence:** One first-party source. The announced scope and limits have high confidence; adoption and productivity effects require independent evidence.\n- **Trend:** T04/T06, November 20 catch-up; editable, continually updated AI work products continue to gain attention.\n\n### 2. Apple researchers release FastFrames interactive-video paper and model artifacts\n\n- **What happened:** Apple and Cornell researchers propose FastFrames, an autoregressive video generation system that simplifies pixel decoding and KV-cache updates to reduce end-to-end per-frame latency. The paper reports 36 ms per frame for the 1.3B variant on one B200 and 45 ms per frame for the 14B variant on eight B200s. Apple's Hugging Face page provides model artifacts and reproduction instructions. These are author measurements for different models and hardware setups, not a matched-configuration ranking.\n- **Why it matters / lens:** Multimodal research, AI in gaming, product decisions and technical context. Interactive world generation calls for tests of input-to-frame latency, long-run consistency and total running cost. This paper offers a technical approach, not proof of a sustained playable game. Model and code licenses also need separate review.\n- **Publication / type / original sources:** Originally submitted November 17, 2026, [arXiv paper](https://arxiv.org/abs/2611.23226); Apple [model page](https://huggingface.co/apple/FastFrames-L), research paper and first-party model artifacts.\n- **Corroboration / confidence:** Artifacts can be inspected, but performance numbers are author-run experiments without independent matched-configuration replication. High confidence in the paper and artifacts; broader performance claims await validation.\n- **Trend:** T02/T05, November 17 catch-up; interactive video research is shifting from playback frame rate toward per-frame response metrics.\n\n## Next checks\n\n- Continue checking primary releases, especially world models, AI games, LLMs and US/China developments; do not pad a low-signal weekend.\n- Test Space permissions and update accuracy; reproduce FastFrames end-to-end response under matched resolution, hardware and interactive inputs.\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid syntax error: " + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
