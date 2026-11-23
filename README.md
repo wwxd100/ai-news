@@ -2,7 +2,7 @@
 <h1>AI News</h1>
 <p>Source-verified global AI industry briefings for product decisions and editorial planning<br>with investment monitoring and technical context as additional lenses</p>
 <p><strong>English</strong> · <a href="README.zh-CN.md">中文</a></p>
-<p><a href="en/daily/2026-11/2026-11-22.md">Read the latest brief</a> · <a href="en/weekly/2026-W46.md">Read W46</a> · <a href="en/monthly/2026-10.md">Read October</a> · <a href="en/INDEX.md">Browse the archive</a></p>
+<p><a href="en/daily/2026-11/2026-11-23.md">Read the latest brief</a> · <a href="en/weekly/2026-W47.md">Read W47</a> · <a href="en/monthly/2026-10.md">Read October</a> · <a href="en/INDEX.md">Browse the archive</a></p>
 </div>
 
 ---
@@ -11,7 +11,7 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 
 ## Current key trends
 
-**Latest edition:** The [November 22 brief](en/daily/2026-11/2026-11-22.md) reports no major new update and records two dated catch-ups: ChatGPT Space's Plus rollout and Apple's FastFrames research artifacts. The [W46 weekly brief](en/weekly/2026-W46.md) synthesizes November 9–15 releases.
+**Latest edition:** The [November 23 brief](en/daily/2026-11/2026-11-23.md) covers the Lean/Mathlib verification of a Claude-assisted Riemann Hypothesis proof, a new OpenAI chief scientist essay, and a medicinal chemistry benchmark catch-up. The [W47 weekly brief](en/weekly/2026-W47.md) synthesizes November 16–22 releases and the proof catch-up by its original event date.
 
 1. **Policy boundaries now affect model supply chains, not only app access.** The [US Federal Register's DeepSeek order](en/daily/2026-10/2026-10-21.md) applies to federal civilian procurement and IT systems, including specified third-party implementations; it is not a universal US private-use ban. Check the July signature and October publication timeline.
 2. **Model competition is shifting from announcements to cost per completed task.** [GPT-6.1 Terra](en/daily/2026-10/2026-10-27.md) adds a lower-priced visual/computer-use option, but its strong benchmark figures are vendor-reported. [MiniMax M3.1 Flash weights](en/daily/2026-10/2026-10-24.md) are downloadable under a community license requiring attribution and authorization above $20 million annual revenue. Compare licenses, hardware, quality, retries, and end-to-end cost.
@@ -31,6 +31,7 @@ Daily coverage spans large language models (LLMs), multimodal and world models, 
 16. **Developer access is the next world-model test, while agent tools move closer to execution.** [Genie 4 API access, Gemini Mac and Tool Retrieval](en/daily/2026-11/2026-11-20.md) need matched tests of control latency, permissions and complete-task cost. Alibaba's AI cloud growth and application loss have distinct reporting periods.
 17. **World state, agent adaptation and capital deployment now need different evidence.** [WM^MLLM and WorldRuler](en/daily/2026-11/2026-11-21.md) are author-evaluated research, Inkling 2 Mini has inspectable weights, and Anthropic's IPO has closed. Test playability and task economics; track actual deployment of proceeds.
 18. **Interactive artifacts and response latency need direct tests.** [ChatGPT Space and FastFrames](en/daily/2026-11/2026-11-22.md) highlight collaboration permissions and input-to-frame latency. The former is a limited product rollout; the latter is author-evaluated research with inspectable artifacts.
+19. **AI-assisted research needs inspectable claims and independent verification.** [Lean/Mathlib and MIT checks](en/daily/2026-11/2026-11-23.md) provide formal evidence for the Claude-assisted Riemann Hypothesis proof; a readable mathematical account and longer scholarly review remain. Pachocki's perplexity proposal is a viewpoint, while MedChemBench is a vendor benchmark rather than a laboratory outcome.
 
 ```mermaid
 flowchart LR
@@ -41,6 +42,8 @@ flowchart LR
 
 ## Historical content
 
+- [2026-11-23 AI Daily Brief (formal proof verification, research viewpoint, benchmark catch-up)](en/daily/2026-11/2026-11-23.md) · [中文](daily/2026-11/2026-11-23.md)
+- [2026-W47 Weekly Brief](en/weekly/2026-W47.md) · [中文](weekly/2026-W47.md)
 - [2026-11-22 AI Daily Brief (no major new update; two catch-ups)](en/daily/2026-11/2026-11-22.md) · [中文](daily/2026-11/2026-11-22.md)
 - [2026-11-21 AI Daily Brief (10 verified items; two paper catch-ups)](en/daily/2026-11/2026-11-21.md) · [中文](daily/2026-11/2026-11-21.md)
 - [2026-11-20 AI Daily Brief (11 verified items; two catch-ups)](en/daily/2026-11/2026-11-20.md) · [中文](daily/2026-11/2026-11-20.md)

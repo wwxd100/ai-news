@@ -60,6 +60,7 @@
 
 ## 2026-11
 
+- [2026-11-23 AI 日报（3 条，含黎曼猜想证明重大补漏）](daily/2026-11/2026-11-23.md) · [English](en/daily/2026-11/2026-11-23.md) · [HTML](daily/2026-11/2026-11-23.html)
 - [2026-11-22 AI 日报（今日无重大更新；2 条补漏）](daily/2026-11/2026-11-22.md) · [English](en/daily/2026-11/2026-11-22.md) · [HTML](daily/2026-11/2026-11-22.html)
 - [2026-11-21 AI 日报（10 条可核查动态；2 篇论文补漏）](daily/2026-11/2026-11-21.md) · [English](en/daily/2026-11/2026-11-21.md) · [HTML](daily/2026-11/2026-11-21.html)
 - [2026-11-20 AI 日报（11 条可核查动态；2 条补漏）](daily/2026-11/2026-11-20.md) · [English](en/daily/2026-11/2026-11-20.md) · [HTML](daily/2026-11/2026-11-20.html)
@@ -84,6 +85,7 @@
 
 ## 周报
 
+- [2026-W47 AI 周报（11-16 至 11-22）](weekly/2026-W47.md) · [English](en/weekly/2026-W47.md) · [HTML](weekly/2026-W47.html)
 - [2026-W46 AI 周报（11-09 至 11-15）](weekly/2026-W46.md) · [English](en/weekly/2026-W46.md) · [HTML](weekly/2026-W46.html)
 - [2026-W45 AI 周报（11-02 至 11-08）](weekly/2026-W45.md) · [English](en/weekly/2026-W45.md) · [HTML](weekly/2026-W45.html)
 - [2026-W44 AI 周报（资料不完整）](weekly/2026-W44.md) · [English](en/weekly/2026-W44.md) · [HTML](weekly/2026-W44.html)

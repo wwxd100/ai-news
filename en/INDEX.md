@@ -6,6 +6,7 @@
 
 ### November
 
+- [2026-11-23 AI Daily Brief (three items; major formal-proof catch-up)](daily/2026-11/2026-11-23.md) · [HTML](daily/2026-11/2026-11-23.html) · [中文](../daily/2026-11/2026-11-23.md)
 - [2026-11-22 AI Daily Brief (no major new update; two catch-ups)](daily/2026-11/2026-11-22.md) · [HTML](daily/2026-11/2026-11-22.html) · [中文](../daily/2026-11/2026-11-22.md)
 - [2026-11-21 AI Daily Brief (10 verified items; two paper catch-ups)](daily/2026-11/2026-11-21.md) · [HTML](daily/2026-11/2026-11-21.html) · [中文](../daily/2026-11/2026-11-21.md)
 - [2026-11-20 AI Daily Brief (11 verified items; two catch-ups)](daily/2026-11/2026-11-20.md) · [HTML](daily/2026-11/2026-11-20.html) · [中文](../daily/2026-11/2026-11-20.md)
@@ -30,6 +31,7 @@
 
 ### Period reviews
 
+- [2026-W47 Weekly Brief](weekly/2026-W47.md) · [HTML](weekly/2026-W47.html) · [中文](../weekly/2026-W47.md)
 - [2026-W46 Weekly Brief](weekly/2026-W46.md) · [HTML](weekly/2026-W46.html) · [中文](../weekly/2026-W46.md)
 - [2026-W45 Weekly Brief](weekly/2026-W45.md) · [HTML](weekly/2026-W45.html) · [中文](../weekly/2026-W45.md)
 - [2026-W44 Weekly Brief (incomplete coverage)](weekly/2026-W44.md) · [HTML](weekly/2026-W44.html) · [中文](../weekly/2026-W44.md)

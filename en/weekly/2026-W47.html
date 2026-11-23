@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Weekly Brief · 2026-W47 (November 16–22)</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="../../weekly/2026-W47.html" lang="zh-CN">中文</a><a href="2026-W47.html" lang="en" aria-current="page">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI Weekly Brief · 2026-W47 (November 16–22)\n\n[English (current)](2026-W47.md) · [中文](../../weekly/2026-W47.md)\n\n- **Compiled:** November 23, 2026; synthesizes the [November 16–22 daily briefs](../INDEX.md). Trends follow original event dates. The November 23 daily brief adds a major catch-up on the Riemann Hypothesis proof, which occurred during this week; it is included in the retrospective analysis but not counted as an item captured in that week's daily editions.\n- **Coverage limit:** Monday and Sunday had short editions, and some research was recorded later. This is a synthesis of verified events, not a count of all industry releases or market share.\n\n## Key conclusions\n\n1. **Model competition is moving toward tiered delivery and cost per completed task.** [Qwen4-Max and Hy4 flash](../daily/2026-11/2026-11-17.md), [GPT-6.2 and Microsoft's MAI models](../daily/2026-11/2026-11-18.md), and [Gemini 4 Neon and Inkling 2 Mini](../daily/2026-11/2026-11-21.md) span APIs, licensed plans and downloadable weights. Vendor scores, prices and real task success rates need separate checks.\n2. **World models have moved from demos to developer access, but playability remains a separate question.** [Project Genie and the Genie 4 API](../daily/2026-11/2026-11-20.md) add limited user and integration access; [WM^MLLM and WorldRuler](../daily/2026-11/2026-11-21.md) and [FastFrames](../daily/2026-11/2026-11-22.md) investigate state, rules and response latency. Papers, artifacts, APIs and game experience are distinct deliverables.\n3. **Agents are entering execution environments and commercial actions.** [Gemini Tasks and enterprise context](../daily/2026-11/2026-11-18.md), [Gemini Mac and Tool Retrieval](../daily/2026-11/2026-11-20.md), and [Connected Apps and live voice](../daily/2026-11/2026-11-21.md) connect permissions, tools and transactions. Independent completion and human intervention costs remain scarce.\n4. **Capital and safety show verifiable changes in status.** [Anthropic's IPO closed](../daily/2026-11/2026-11-21.md), while deployment of funds and returns remain unknown. [GAO's targeted attack tests](../daily/2026-11/2026-11-19.md) and vendor disclosure principles represent different levels of evidence.\n5. **Verification of AI-assisted research deserves its own editorial thread.** [Lean/Mathlib's formal verification of the Riemann Hypothesis proof](../daily/2026-11/2026-11-23.md) is a major event from this week recorded today. It demonstrates the value of formal artifacts and independent checks; a readable account and long-run scholarly discussion remain. [MedChemBench](../daily/2026-11/2026-11-23.md) shows why benchmark scores must not be treated as experimental outcomes.\n\n```mermaid\nflowchart LR\n  A[\"Model, world and agent delivery\"] --> B[\"Access, license, permission and cost\"]\n  C[\"IPO, safety and science\"] --> D[\"Finance, independent checks and real results\"]\n  B --> E[\"Next-week product and editorial tests\"]\n  D --> E\n```\n\n## Trend evolution and key events\n\n| Trend | Evidence this week | Limit or counterevidence | Next signal |\n| --- | --- | --- | --- |\n| T01/T03 Models and multimodal | Qwen4-Max API, GPT-6.2, Gemini 4 Neon and Inkling 2 Mini weights; [daily brief](../daily/2026-11/2026-11-21.md) | Promised weights are not delivered weights; open weights are not necessarily open source; vendor scores lack independent replication | Matched-task quality, latency, licensing and total cost |\n| T02/T05 World models and gaming | Genie 4 limited experience/API, WorldRuler and WM^MLLM papers, FastFrames artifacts; [daily brief](../daily/2026-11/2026-11-22.md) | 24 FPS is an output specification, not generation speed; per-frame latency does not establish long-run playability; MyMems remains a future plan | Long-run state, input response, player retention and operating cost |\n| T04/T06 Agents and work interfaces | Gemini Mac, Tool Retrieval, Connected Apps and ChatGPT Space; [daily brief](../daily/2026-11/2026-11-22.md) | Rollouts are often limited by eligibility or region; the number of connections does not establish completed transactions | Permission revocation, recovery, conversion and editing rework |\n| T07 Safety and AI science | GAO targeted tests, Anthropic disclosure principles and Lean/Mathlib formal verification; [catch-up](../daily/2026-11/2026-11-23.md) | A test sample cannot establish overall risk; a policy is not implementation evidence; the formal proof still needs a readable account | External retests, disclosure practice and independent mathematical explanations |\n| T08 Capital and compute | Anthropic IPO closing, NVIDIA earnings and Rubin shipment, Alibaba AI-cloud revenue; [daily brief](../daily/2026-11/2026-11-21.md) | Proceeds are not returns; financial reporting periods differ; shipment is not customer value | Use of proceeds, customer deployment and unit economics |\n\n## Corrected judgments and open checks\n\n- **Corrected by this week's evidence:** “Anthropic announced an IPO but has not closed it” ceased to hold after November 20; the [issuer announcement](../daily/2026-11/2026-11-21.md) confirms closing. Gross proceeds, issuer proceeds and concurrent placement need separate treatment.\n- **Not supported:** “Genie 4's 24 FPS is real-time generation speed”; it is an output specification. Interactive quality needs latency, duration and player-task tests.\n- **Not supported:** “World-model papers or a partnership announcement mean a playable AI game has shipped.” WorldRuler, WM^MLLM and MyMems are at different research or planning stages.\n- **Open:** A readable mathematical account of the formal proof; model cost per completed task; agent permissions and transaction success; open-weight licenses; and whether AI science benchmarks improve experimental decisions.\n\n## Next-cycle test list\n\n1. Compare models, voice and video systems on matched tasks, hardware and licenses, recording retries and human review.\n2. Test Genie 4, FastFrames and rule/state papers separately for response, long-run consistency and player value; one FPS figure cannot stand in for experience.\n3. Audit agent and commercial connections for permission granularity, revocation, logs and completed transactions.\n4. Track scholarly explanation of the Lean proof, independent safety retests, Anthropic's use of proceeds and actual compute deployment.\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid syntax error: " + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
