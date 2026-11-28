@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 · 2026-11-28（迟到整理）</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="2026-11-28.html" lang="zh-CN" aria-current="page">中文</a><a href="../../en/daily/2026-11/2026-11-28.html" lang="en">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI 日报 · 2026-11-28（迟到整理）\n\n[中文（当前）](2026-11-28.md) · [English](../../en/daily/2026-11/2026-11-28.md)\n\n- **采集窗口：** 截至 2026-11-28 11:00（Asia/Shanghai）的可核查发布；本期于当日 17:10 后整理。主要是 11 月 27 日的技术发布。与[前一期](2026-11-27.md)去重。[索引](../../INDEX.md) · [趋势](../../TRACKERS.md)。来源只列日期时不推断时分。\n- **筛选：** 2 条技术进展。未发现足以收录的新旗舰 LLM 或可玩 AI 游戏世界模型交付；不以转载凑数。\n\n## 今日关键结论\n\n1. **视频模型部署的性能瓶颈同时在加速器与主机流程。** Hugging Face 工程师在 Trainium3 上优化 LTX‑2.5，报告使用 32 个 NeuronCore 生成 10 秒、2048×1024、有声音片段耗时 22–23 秒；这是特定设备的团队实验，不是跨云成本结论。\n2. **多模态 tokenizer 的权重交付增加了可复测性。** Kandinsky Lab 发布 KVAE‑3.0 的音频、图像、视频 VAE 与推理代码；质量比较来自团队自身评测，需相同下游模型和预算复测。\n3. **视频续写不等于可控游戏世界或机器人仿真。** Trainium3 演示依据视频首秒与文本生成后续画面，尚未按机器人动作条件生成，不能直接用于闭环训练或实时玩法。\n\n```mermaid\nflowchart LR\n  A[\"模型工件与单机实验\"] --> B[\"同配置复测\"]\n  B --> C[\"闭环控制与用户体验验证\"]\n```\n\n## 高信号动态\n\n### 1. Hugging Face 在 Trainium3 上优化 LTX‑2.5 视频生成\n\n- **发生了什么：** 工程师将 LTX‑2.5 视频加音频流程移植到 AWS Trainium3；在 32 个 NeuronCore 上，其团队报告 10 秒 2048×1024 片段的稳态生成耗时 22–23 秒。文章同时给出多镜头衔接、代码与样片，并用首秒机器人和汽车视频做续写演示。\n- **为什么重要 / 视角：** 产品决策、内容选题。多镜头创作要把首帧/末帧约束、选片和音频衔接纳入工作流；部署时需拆分加载、主机预处理、生成与解码时间。\n- **发布时间 / 类型 / 原始信源：** 2026-11-27，Hugging Face [工程文章与代码入口](https://huggingface.co/blog/video-trainium3)，项目方实验。\n- **交叉验证 / 可信度：** 代码、样片和配置可检查；速度未由独立团队复测。视频续写按文本而非机器人动作条件生成，不能证明闭环世界模型或游戏可玩性。实验发布高可信，外推有限。\n- **趋势：** T02/T03/T05 持续升温；视频部署逐渐强调完整流水线，而非单次模型前向。\n\n### 2. Kandinsky Lab 发布 KVAE‑3.0 多模态 tokenizer\n\n- **发生了什么：** 团队公开音频、图像、视频三类 VAE 的模型权重及推理代码。其说明称立体声音频使用 48 kHz、50 Hz 潜变量，视频版本在空间与时间上压缩画面；与其他 VAE 的胜率和重建指标均为团队测试。\n- **为什么重要 / 视角：** 产品决策、知识扫盲。tokenizer 会影响视频或音频生成的画质、训练成本与延迟；更换它需要在同一下游模型上检查重建、细节保留和最终成片质量。\n- **发布时间 / 类型 / 原始信源：** 2026-11-27，Kandinsky Lab [Hugging Face 技术文章及权重入口](https://huggingface.co/blog/kandinskylab/kvae-3)，团队研究发布。\n- **交叉验证 / 可信度：** 权重和代码可检查；比较数字缺独立同条件复测。交付高可信，优势待验证。\n- **趋势：** T01/T02 首次出现；多模态竞争下沉至潜变量表示。\n\n## 下一轮观察\n\n- 在相同画质、并发与云账单下复测视频生成；区分短视频续写与按动作控制的世界模型。\n- 用相同下游生成器比较 KVAE‑3.0 与既有 tokenizer 的质量、速度和兼容性。\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid \u8bed\u6cd5\u9519\u8bef\uff1a" + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>

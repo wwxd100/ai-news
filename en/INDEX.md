@@ -6,6 +6,8 @@
 
 ### November
 
+- [2026-11-28 AI Daily Brief (two technical developments; compiled late)](daily/2026-11/2026-11-28.md) · [HTML](daily/2026-11/2026-11-28.html) · [中文](../daily/2026-11/2026-11-28.md)
+- [2026-11-27 AI Daily Brief (five verifiable developments; late edition)](daily/2026-11/2026-11-27.md) · [HTML](daily/2026-11/2026-11-27.html) · [中文](../daily/2026-11/2026-11-27.md)
 - [2026-11-26 AI Daily Brief (eight verifiable developments; three catch-ups)](daily/2026-11/2026-11-26.md) · [HTML](daily/2026-11/2026-11-26.html) · [中文](../daily/2026-11/2026-11-26.md)
 - [2026-11-25 AI Daily Brief (seven verified developments; one catch-up)](daily/2026-11/2026-11-25.md) · [HTML](daily/2026-11/2026-11-25.html) · [中文](../daily/2026-11/2026-11-25.md)
 - [2026-11-24 AI Daily Brief (seven verified developments)](daily/2026-11/2026-11-24.md) · [HTML](daily/2026-11/2026-11-24.html) · [中文](../daily/2026-11/2026-11-24.md)

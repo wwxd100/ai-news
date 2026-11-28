@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Daily Brief · 2026-11-28 (compiled late)</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1f2328; --bg:#fff; --muted:#656d76; --line:#d0d7de; --code:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --bg:#0d1117; --muted:#8d96a0; --line:#30363d; --code:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  h1,h2,h3 { line-height:1.3; } h1,h2 { border-bottom:1px solid var(--line); padding-bottom:.3em; }
+  a { color:#0969da; } blockquote { margin:0; padding:0 1em; color:var(--muted); border-left:4px solid var(--line); }
+  code { background:var(--code); padding:.15em .4em; border-radius:6px; font-size:.9em; }
+  pre { background:var(--code); padding:16px; border-radius:8px; overflow:auto; } pre code { padding:0; }
+  table { border-collapse:collapse; display:block; overflow:auto; }
+  th,td { border:1px solid var(--line); padding:6px 12px; }
+  .language-switch { max-width:960px; margin:0 auto; padding:16px 24px 0; text-align:right; }
+  .language-switch a { margin-left:12px; }
+  .language-switch [aria-current="page"] { color:var(--fg); font-weight:600; text-decoration:none; }
+  .mermaid { display:flex; justify-content:center; margin:24px 0; padding:16px; border:1px solid var(--line); border-radius:12px; overflow:auto; }
+  .mermaid-error { color:#cf222e; white-space:pre-wrap; }
+</style>
+</head>
+<body>
+<nav class="language-switch" aria-label="Language / 语言"><a href="../../../daily/2026-11/2026-11-28.html" lang="zh-CN">中文</a><a href="2026-11-28.html" lang="en" aria-current="page">English</a></nav>
+<main id="content"></main>
+<script type="module">
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@12/lib/marked.esm.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const source = "# AI Daily Brief · 2026-11-28 (compiled late)\n\n[English (current)](2026-11-28.md) · [中文](../../../daily/2026-11/2026-11-28.md)\n\n- **Collection window:** Verifiable publications available by November 28, 2026, 11:00 Asia/Shanghai; compiled after 17:10 the same day. Sources are mainly November 27 technical releases. Deduplicated against the [previous brief](2026-11-27.md). [Index](../../INDEX.md) · [Trends](../../../TRACKERS.md). Exact times are not inferred from date-only sources.\n- **Selection:** Two technical developments. No sufficiently evidenced new flagship LLM or playable AI game world model delivery was found. Reposts were not used to fill the count.\n\n## Key conclusions\n\n1. **Video-model deployment bottlenecks occur in both accelerators and host-side processing.** A Hugging Face engineer reports that an optimized LTX‑2.5 run on Trainium3 used 32 NeuronCores to produce a 10-second, 2048×1024 clip with sound in 22–23 seconds. This is a team experiment on one setup, not a cross-cloud cost conclusion.\n2. **Released multimodal-tokenizer weights make replication more feasible.** Kandinsky Lab released audio, image and video KVAE‑3.0 VAEs and inference code. Its quality comparisons are team-run and need matched downstream models and budgets.\n3. **Video continuation is not a controllable game world or robot simulation.** The Trainium3 demonstration generates continuations from the first second of footage and text; it is not conditioned on robot actions and cannot directly establish closed-loop training or real-time play.\n\n```mermaid\nflowchart LR\n  A[\"Model artifacts and single-machine tests\"] --> B[\"Matched replication\"]\n  B --> C[\"Closed-loop control and user-experience tests\"]\n```\n\n## High-signal developments\n\n### 1. Hugging Face optimizes LTX‑2.5 video generation on Trainium3\n\n- **What happened:** An engineer ported the LTX‑2.5 video-and-audio pipeline to AWS Trainium3. On 32 NeuronCores, the team reports 22–23 seconds of steady-state generation time for a 10-second 2048×1024 clip. The article provides a multi-shot workflow, code and samples, plus continuation examples from one second of robot and car footage.\n- **Why it matters / lens:** Product decisions and editorial planning. Multi-shot creation needs frame constraints, take selection and sound continuity. Deployment tests should separate model loading, host preprocessing, generation and decoding time.\n- **Publication / type / original source:** November 27, 2026, Hugging Face [engineering article and code links](https://huggingface.co/blog/video-trainium3), project experiment.\n- **Corroboration / confidence:** Code, samples and configuration are inspectable; speed lacks independent replication. Continuation follows text rather than robot actions, so it does not establish a closed-loop world model or playable game. High confidence in the experiment's publication, limited generality.\n- **Trend:** T02/T03/T05, continuing rise; video deployment increasingly measures the entire pipeline rather than one model pass.\n\n### 2. Kandinsky Lab releases KVAE‑3.0 multimodal tokenizers\n\n- **What happened:** The team released model weights and inference code for audio, image and video VAEs. Its description lists 48 kHz stereo audio with a 50 Hz latent rate and spatial and temporal video compression. Win rates and reconstruction comparisons with other VAEs are team-run.\n- **Why it matters / lens:** Product decisions and technical context. Tokenizers affect video and audio quality, training cost and latency. Switching requires matched tests of reconstruction, detail retention and finished-output quality on the same downstream model.\n- **Publication / type / original source:** November 27, 2026, Kandinsky Lab [Hugging Face article and weight links](https://huggingface.co/blog/kandinskylab/kvae-3), team research release.\n- **Corroboration / confidence:** Weights and code are inspectable; comparisons lack independent matched replication. High confidence in delivery, advantage unverified.\n- **Trend:** T01/T02, first appearance; multimodal competition extends to latent representations.\n\n## Next checks\n\n- Replicate video generation at matched quality, concurrency and cloud cost; distinguish short video continuation from action-conditioned world models.\n- Compare KVAE‑3.0 and existing tokenizers under the same downstream generator for quality, speed and compatibility.\n";
+const root = document.getElementById("content");
+root.innerHTML = marked.parse(source);
+root.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+  const div = document.createElement("div");
+  div.className = "mermaid";
+  div.textContent = code.textContent;
+  code.parentElement.replaceWith(div);
+});
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+mermaid.initialize({ startOnLoad: false, theme: dark ? "dark" : "default", securityLevel: "strict" });
+for (const el of root.querySelectorAll(".mermaid")) {
+  try { await mermaid.run({ nodes: [el] }); }
+  catch (e) { el.classList.add("mermaid-error"); el.textContent = "Mermaid syntax error: " + e.message; }
+}
+document.body.dataset.rendered = "true";
+</script>
+</body>
+</html>
